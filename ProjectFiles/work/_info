@@ -1,0 +1,54 @@
+m255
+K4
+z2
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/kadenb/cpre381/project1/381Project1/ProjectFiles
+Emem
+Z1 w1697635538
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z5 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd
+Z6 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd
+l0
+L8 1
+Vl8<PCiN;cU;BN3M[A<;IE3
+!s100 fRlcaiTJZJ1H;nZh;8=LI3
+Z7 OL;C;2024.2;79
+32
+Z8 !s110 1728439103
+!i10b 1
+Z9 !s108 1728439103.000000
+Z10 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd|
+!s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd|
+!i113 0
+Z11 o-work work
+Z12 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+R4
+DEx4 work 3 mem 0 22 l8<PCiN;cU;BN3M[A<;IE3
+!i122 0
+l37
+L27 24
+V`6^NbPhKNmSBg:`:Un8;g3
+!s100 OI8_3><BhDkT3l3n8`OXd3
+R7
+32
+R8
+!i10b 1
+R9
+R10
+Z13 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd|
+!i113 0
+R11
+R12

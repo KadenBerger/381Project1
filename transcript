@@ -1,0 +1,41 @@
+# //  Questa Sim-64
+# //  Version 2024.2 linux_x86_64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+cd /home/kadenb/cpre381/project1/381Project1/ProjectFiles
+vlib work
+vcom -reportprogress 300 -work work /home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 20:58:23 on Oct 08,2024
+# vcom -reportprogress 300 -work work /home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mem
+# -- Compiling architecture rtl of mem
+# End time: 20:58:23 on Oct 08,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/kadenb/cpre381/project1/381Project1/ProjectFiles/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 20:58:23 on Oct 08,2024
+# vcom -reportprogress 300 -work work /home/kadenb/cpre381/project1/381Project1/ProjectFiles/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Error: (vcom-11) Could not find work.mips_types.
+# ** Error (suppressible): /home/kadenb/cpre381/project1/381Project1/ProjectFiles/MIPS_Processor.vhd(21): (vcom-1195) Cannot find expanded name "work.MIPS_types".
+# ** Error: /home/kadenb/cpre381/project1/381Project1/ProjectFiles/MIPS_Processor.vhd(21): Unknown expanded name.
+# ** Note: /home/kadenb/cpre381/project1/381Project1/ProjectFiles/MIPS_Processor.vhd(23): VHDL Compiler exiting
+# End time: 20:58:23 on Oct 08,2024, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
