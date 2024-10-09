@@ -1,0 +1,92 @@
+-------------------------------------------------------------------------
+-- Kaden Berger
+-- Department of Electrical and Computer Engineering
+-- Iowa State University
+-------------------------------------------------------------------------
+-- tb_sign_extender.vhd
+-------------------------------------------------------------------------
+-- DESCRIPTION: This file contains a testbench for the addersubtractor_N unit.
+--              
+-- 09/28/2024 by Kaden::Design created.
+-------------------------------------------------------------------------
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity tb_sign_extender is
+end entity tb_sign_extender;
+
+architecture behavior of tb_sign_extender is
+--components, signals, component instances
+component sign_extender is
+	port(extensionMode   : in std_logic;
+	     i_Imm            : in std_logic_vector(15 downto 0);
+             o_Extended       : out std_logic_vector(31 downto 0));
+end component;
+	
+--signals
+signal s_extensionMode : std_logic;
+signal s_Imm : std_logic_vector(15 downto 0);
+signal s_Output : std_logic_vector(31 downto 0);
+
+begin
+
+-- instantiate design
+
+DUT0: sign_extender
+port map(extensionMode   => s_extensionMode,
+	 i_Imm           => s_Imm,
+	 o_Extended      => s_Output);
+
+-- test sequence
+
+process
+	begin
+	
+-- Zero Extension of Positive Value
+s_extensionMode <= '0';  -- Zero extension
+s_Imm           <= X"1234";  -- Immediate value is 0x1234
+wait for 10 ns;
+
+-- Zero Extension of Zero
+s_extensionMode <= '0';  -- Zero extension
+s_Imm           <= X"0000";  -- Immediate value is 0x0000
+wait for 10 ns;
+
+-- Zero Extension of Maximum Positive Value
+s_extensionMode <= '0';  -- Zero extension
+s_Imm           <= X"7FFF";  -- Immediate value is 0x7FFF (maximum positive)
+wait for 10 ns;
+
+-- Sign Extension of Negative Value
+s_extensionMode <= '1';  -- Sign extension
+s_Imm           <= X"FFAB";  -- Immediate value is -85 in 2's complement
+wait for 10 ns;
+
+-- Sign Extension of Positive Value
+s_extensionMode <= '1';  -- Sign extension
+s_Imm           <= X"0034";  -- Immediate value is 52 (positive)
+wait for 10 ns;
+
+-- Sign Extension of Maximum Negative Value
+s_extensionMode <= '1';  -- Sign extension
+s_Imm           <= X"8000";  -- Immediate value is -32768 (maximum negative)
+wait for 10 ns;
+
+-- Sign Extension of Zero
+s_extensionMode <= '1';  -- Sign extension
+s_Imm           <= X"0000";  -- Immediate value is 0x0000
+wait for 10 ns;
+
+-- Zero Extension of a Value that Starts with 1
+s_extensionMode <= '0';  -- Zero extension
+s_Imm           <= X"8A3B";  -- Immediate value is 0x8A3B (MSB is 1)
+wait for 10 ns;
+
+
+
+
+
+
+	end process;
+end architecture;

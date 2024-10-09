@@ -1,0 +1,1 @@
+/usr/local/mentor/questasim/linux_x86_64/VisualizerRls/bin/viscom -nolock -quiet -jmem_size 15679776 work.tb_dmem -quiet -auto_acc_if_foreign -work work +acc -allow_unnamed -o _opt2 -id 1-0050569bb448-66f9e6bb-220c4-6b36 +__design_bin_path+/home/kadenb/cpre381/Lab2/Lab2/Lab2 +__betafsm
