@@ -39,3 +39,42 @@ vcom -reportprogress 300 -work work /home/kadenb/cpre381/project1/381Project1/Pr
 # ** Note: /home/kadenb/cpre381/project1/381Project1/ProjectFiles/MIPS_Processor.vhd(23): VHDL Compiler exiting
 # End time: 20:58:23 on Oct 08,2024, Elapsed time: 0:00:00
 # Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 22:52:01 on Oct 08,2024
+# vcom -reportprogress 300 -work work /home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity barrel_shifter
+# ** Error: /home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd(22): near ";": (vcom-1576) expecting => or '|' or '!'.
+# ** Note: /home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd(22): VHDL Compiler exiting
+# End time: 22:52:01 on Oct 08,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 22:52:14 on Oct 08,2024
+# vcom -reportprogress 300 -work work /home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity barrel_shifter
+# -- Compiling architecture behavior of barrel_shifter
+# ** Error: /home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd(39): (vcom-1136) Unknown identifier "logic_shift".
+# ** Note: /home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd(43): VHDL Compiler exiting
+# End time: 22:52:14 on Oct 08,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 22:52:26 on Oct 08,2024
+# vcom -reportprogress 300 -work work /home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity barrel_shifter
+# -- Compiling architecture behavior of barrel_shifter
+# End time: 22:52:26 on Oct 08,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

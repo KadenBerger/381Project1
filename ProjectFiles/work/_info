@@ -9,29 +9,72 @@ z2
 !i10f 100
 cModel Technology
 Z0 d/home/kadenb/cpre381/project1/381Project1/ProjectFiles
-Emem
-Z1 w1697635538
+Ebarrel_shifter
+Z1 w1728445944
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
+R0
+Z5 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd
+Z6 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd
+l0
+L20 1
+VD6E:8JdFTc=Nm=aHN_c^K3
+!s100 ekoOLP<7?<Fl5LA6O69d;1
+Z7 OL;C;2024.2;79
+32
+Z8 !s110 1728445946
+!i10b 1
+Z9 !s108 1728445946.000000
+Z10 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd|
+!s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd|
+!i113 0
+Z11 o-work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavior
+R2
+R3
+R4
+DEx4 work 14 barrel_shifter 0 22 D6E:8JdFTc=Nm=aHN_c^K3
+!i122 2
+l32
+L28 16
+VRj^[lRHiJYLz<>bSz2Dmi3
+!s100 @JXzdfj^?D^]J05n[X]kJ1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+Z13 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd|
+!i113 0
+R11
+R12
+Emem
+Z14 w1697635538
+R2
+R3
+R4
 !i122 0
 R0
-Z5 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd
-Z6 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd
+Z15 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd
+Z16 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd
 l0
 L8 1
 Vl8<PCiN;cU;BN3M[A<;IE3
 !s100 fRlcaiTJZJ1H;nZh;8=LI3
-Z7 OL;C;2024.2;79
+R7
 32
-Z8 !s110 1728439103
+Z17 !s110 1728439103
 !i10b 1
-Z9 !s108 1728439103.000000
-Z10 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd|
-!s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd|
+Z18 !s108 1728439103.000000
+Z19 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd|
+Z20 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd|
 !i113 0
-Z11 o-work work
-Z12 tExplicit 1 CvgOpt 0
+R11
+R12
 Artl
 R2
 R3
@@ -44,11 +87,11 @@ V`6^NbPhKNmSBg:`:Un8;g3
 !s100 OI8_3><BhDkT3l3n8`OXd3
 R7
 32
-R8
+R17
 !i10b 1
-R9
-R10
-Z13 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd|
+R18
+R19
+R20
 !i113 0
 R11
 R12
