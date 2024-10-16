@@ -11,10 +11,10 @@ use IEEE.std_logic_1164.all;
 
 -- entity
 entity fetch_logic is
-  generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32.
+ -- generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32.
   port(i_CLK        : in std_logic;     -- Clock input
        i_RST        : in std_logic;     -- Reset input
-       i_WE         : in std_logic;     -- Write enable input
+      -- i_WE         : in std_logic;     -- Write enable input
        i_D          : in std_logic_vector(31 downto 0);     -- Data value input
        o_Q          : out std_logic_vector(31 downto 0));   -- Data value output
 end fetch_logic;
