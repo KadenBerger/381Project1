@@ -9,32 +9,32 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity tb_fetch_logic is
+entity tb_pc_fetch_logic is
   generic(gCLK_HPER   : time := 50 ns);
-end tb_fetch_logic;
+end tb_pc_fetch_logic;
 
-architecture behavior of tb_fetch_logic is
+architecture behavior of tb_pc_fetch_logic is
   
   -- Calculate the clock period as twice the half-period
-  constant cCLK_PER  : time := gCLK_HPER * 2;
+  --constant cCLK_PER  : time := gCLK_HPER * 2;
 
 
   component pc_fetch_logic
   port(i_CLK        : in std_logic;     -- Clock input
        i_RST        : in std_logic;     -- Reset input
-     -- i_WE         : in std_logic;     -- Write enable input
        i_D          : in std_logic_vector(31 downto 0);     -- Data value input
        o_Q          : out std_logic_vector(31 downto 0));   -- Data value output
   end component;
 
   -- Temporary signals to connect to the dff component.
-  signal s_CLK, s_RST, s_WE  : std_logic;
+
+  signal s_CLK, s_RST : std_logic;
   signal s_D, s_Q : std_logic_vector(31 downto 0);
 
 begin
 
   DUT:pc_fetch_logic 
-  --generic map(N => 32)
+
   port map(i_CLK => s_CLK, 
            i_RST => s_RST,
            i_D   => s_D,
@@ -57,27 +57,27 @@ begin
     -- Reset the FF
     s_RST <= '1';
     s_D   <= X"00000000";
-    wait for cCLK_PER;
+    wait for gCLK_HPER;
 
     -- Store X"FFFFFFFF"
     s_RST <= '0';
     s_D   <= X"FFFFFFFF";
-    wait for cCLK_PER;  
+    wait for gCLK_HPER;  
 
     -- Keep X"FFFFFFFF"
     s_RST <= '0';
     s_D   <= X"00000000";
-    wait for cCLK_PER;  
+    wait for gCLK_HPER;  
 
     -- Store '0'    
     s_RST <= '1';
     s_D   <= X"00000000";
-    wait for cCLK_PER;  
+    wait for gCLK_HPER;  
 
     -- Keep '0'
     s_RST <= '0';
     s_D   <= X"FFFFFFFF";
-    wait for cCLK_PER;  
+    wait for gCLK_HPER;  
 
     wait;
   end process;
