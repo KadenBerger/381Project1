@@ -1,6 +1,12 @@
 m255
 K4
 z2
+!s12c _opt1
+Z0 !s99 nomlopt
+Z1 !s12c _opt
+R0
+R1
+R0
 !s11e vcom 2024.2 2024.05, May 20 2024
 13
 !s112 1.1
@@ -8,84 +14,70 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/kadenb/cpre381/project1/381Project1/ProjectFiles
-Ebarrel_shifter
-Z1 w1728445944
-Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 2
+Z2 d/home/kadenb/cpre381/project1/381Project1/ProjectFiles
+T_opt
+!s110 1729109577
+VbM>kmPnU6Q`D7cAc;FE593
+Z3 04 14 8 work tb_fetch_logic behavior 1
+=1-0050569b3804-67101e49-b6f52-57fa
 R0
-Z5 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd
-Z6 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd
+Z4 !s12f OEM100
+Z5 !s12b OEM100
+Z6 !s124 OEM100
+Z7 !s135 nogc
+o-quiet -auto_acc_if_foreign -work work
+Z8 tCvgOpt 0
+n@_opt
+Z9 OL;O;2024.2;79
+R2
+T_opt1
+!s110 1729109590
+Vg`SAVD@[LI8@M9XSHa[aQ3
+R3
+=1-0050569b3804-67101e56-9a297-5851
+R0
+R4
+R5
+R6
+R7
+o-quiet -auto_acc_if_foreign -work work +acc
+R8
+n@_opt1
+R9
+Ebarrel_shifter
+Z10 w1728445944
+Z11 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z12 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z13 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
+R2
+Z14 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd
+Z15 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd
 l0
 L20 1
 VD6E:8JdFTc=Nm=aHN_c^K3
 !s100 ekoOLP<7?<Fl5LA6O69d;1
-Z7 OL;C;2024.2;79
+Z16 OL;C;2024.2;79
 32
-Z8 !s110 1728445946
+Z17 !s110 1728445946
 !i10b 1
-Z9 !s108 1728445946.000000
-Z10 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd|
-!s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd|
+Z18 !s108 1728445946.000000
+Z19 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd|
+Z20 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd|
 !i113 0
-Z11 o-work work
-Z12 tExplicit 1 CvgOpt 0
+Z21 o-work work
+Z22 tExplicit 1 CvgOpt 0
 Abehavior
-R2
-R3
-R4
+R11
+R12
+R13
 DEx4 work 14 barrel_shifter 0 22 D6E:8JdFTc=Nm=aHN_c^K3
 !i122 2
 l32
 L28 16
 VRj^[lRHiJYLz<>bSz2Dmi3
 !s100 @JXzdfj^?D^]J05n[X]kJ1
-R7
-32
-R8
-!i10b 1
-R9
-R10
-Z13 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd|
-!i113 0
-R11
-R12
-Emem
-Z14 w1697635538
-R2
-R3
-R4
-!i122 0
-R0
-Z15 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd
-Z16 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd
-l0
-L8 1
-Vl8<PCiN;cU;BN3M[A<;IE3
-!s100 fRlcaiTJZJ1H;nZh;8=LI3
-R7
-32
-Z17 !s110 1728439103
-!i10b 1
-Z18 !s108 1728439103.000000
-Z19 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd|
-Z20 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd|
-!i113 0
-R11
-R12
-Artl
-R2
-R3
-R4
-DEx4 work 3 mem 0 22 l8<PCiN;cU;BN3M[A<;IE3
-!i122 0
-l37
-L27 24
-V`6^NbPhKNmSBg:`:Un8;g3
-!s100 OI8_3><BhDkT3l3n8`OXd3
-R7
+R16
 32
 R17
 !i10b 1
@@ -93,5 +85,259 @@ R18
 R19
 R20
 !i113 0
+R21
+R22
+Econtrol_unit
+Z23 w1729091219
+R12
+R13
+!i122 7
+Z24 d/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles
+Z25 8/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/control_unit.vhd
+Z26 F/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/control_unit.vhd
+l0
+Z27 L12 1
+VYT27699o_o`RAdCgO2ZBW3
+!s100 1I>HgaOjYoA2h^KT;T<Gz3
+R16
+32
+Z28 !s110 1729109232
+!i10b 1
+Z29 !s108 1729109231.000000
+Z30 !s90 -reportprogress|300|-work|work|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/control_unit.vhd|
+Z31 !s107 /home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/control_unit.vhd|
+!i113 0
+R21
+R22
+Adataflow
+R12
+R13
+DEx4 work 12 control_unit 0 22 YT27699o_o`RAdCgO2ZBW3
+!i122 7
+l23
+L21 43
+VNc]k?n8jI2o7RogP>1Nmg0
+!s100 UPl17db3`URWZg>O;Gl:T1
+R16
+32
+R28
+!i10b 1
+R29
+R30
+R31
+!i113 0
+R21
+R22
+Efetch_logic
+Z32 w1729108966
+R12
+R13
+!i122 9
+R24
+Z33 8/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic.vhd
+Z34 F/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic.vhd
+l0
+L13 1
+VRhB]_JHhA5J7Z`e6Gn?TQ1
+!s100 bijzgkG6JAczDUHK2@`Z32
+R16
+33
+Z35 !s110 1729109556
+!i10b 1
+Z36 !s108 1729109556.000000
+Z37 !s90 -reportprogress|300|-work|work|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic.vhd|
+Z38 !s107 /home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic.vhd|
+!i113 0
+R21
+Z39 tExplicit 1 NoCoverage 1 CvgOpt 0
+Astructural
+R12
+R13
+DEx4 work 11 fetch_logic 0 22 RhB]_JHhA5J7Z`e6Gn?TQ1
+!i122 9
+l35
+L23 27
+VlSl0d@5h8i<4jA]mcLS523
+!s100 ]9=c8b?lUbz9_NKIWDk0P0
+R16
+33
+R35
+!i10b 1
+R36
+R37
+R38
+!i113 0
+R21
+R39
+Efetch_logic_dffg
+Z40 w1729109516
+R12
+R13
+!i122 10
+R24
+Z41 8/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic_dffg.vhd
+Z42 F/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic_dffg.vhd
+l0
+R27
+V_9z[`WcZg40lWBioJEca72
+!s100 >iYWiTQ3^QTYQYG[:zBc21
+R16
+33
+Z43 !s110 1729109558
+!i10b 1
+Z44 !s108 1729109558.000000
+Z45 !s90 -reportprogress|300|-work|work|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic_dffg.vhd|
+Z46 !s107 /home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic_dffg.vhd|
+!i113 0
+R21
+R39
+Amixed
+R12
+R13
+DEx4 work 16 fetch_logic_dffg 0 22 _9z[`WcZg40lWBioJEca72
+!i122 10
+l26
+L22 22
+V?Qa8LnBX47oG@ciDHQhE01
+!s100 nf<E6=anIgT74H>z=z8ZO0
+R16
+33
+R43
+!i10b 1
+R44
+R45
+R46
+!i113 0
+R21
+R39
+Emem
+Z47 w1697635538
 R11
 R12
+R13
+!i122 0
+R2
+Z48 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd
+Z49 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd
+l0
+L8 1
+Vl8<PCiN;cU;BN3M[A<;IE3
+!s100 fRlcaiTJZJ1H;nZh;8=LI3
+R16
+32
+Z50 !s110 1728439103
+!i10b 1
+Z51 !s108 1728439103.000000
+Z52 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd|
+Z53 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd|
+!i113 0
+R21
+R22
+Artl
+R11
+R12
+R13
+DEx4 work 3 mem 0 22 l8<PCiN;cU;BN3M[A<;IE3
+!i122 0
+l37
+L27 24
+V`6^NbPhKNmSBg:`:Un8;g3
+!s100 OI8_3><BhDkT3l3n8`OXd3
+R16
+32
+R50
+!i10b 1
+R51
+R52
+R53
+!i113 0
+R21
+R22
+Etb_control_unit
+Z54 w1729103755
+Z55 DPx3 std 3 env 0 22 g[fj8WJKOa<0Y`zWY3UD70
+R11
+Z56 DPx4 ieee 16 std_logic_textio 0 22 8]8<fKiYoHe;_IDO3kmNH2
+R12
+R13
+!i122 11
+R24
+Z57 8/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_control_unit.vhd
+Z58 F/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_control_unit.vhd
+l0
+L17 1
+VM7d`O6481ODoR:iD[J3LM2
+!s100 ;5j0b4@Jcdj@m9]^C=XkB3
+R16
+33
+Z59 !s110 1729109559
+!i10b 1
+Z60 !s108 1729109559.000000
+Z61 !s90 -reportprogress|300|-work|work|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_control_unit.vhd|
+Z62 !s107 /home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_control_unit.vhd|
+!i113 0
+R21
+R39
+Abehavior
+R55
+R11
+R56
+R12
+R13
+DEx4 work 15 tb_control_unit 0 22 M7d`O6481ODoR:iD[J3LM2
+!i122 11
+l40
+L21 195
+Vina[l<_chgYA;S04WQOlD1
+!s100 M@^P0]zc2jCL?=V4dTM=m2
+R16
+33
+R59
+!i10b 1
+R60
+R61
+R62
+!i113 0
+R21
+R39
+Etb_fetch_logic
+Z63 w1729108890
+R12
+R13
+!i122 12
+R24
+Z64 8/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_pc_fetch_logic.vhd
+Z65 F/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_pc_fetch_logic.vhd
+l0
+R27
+VQnGFID4eUW@Ya`Nhn]Z]X3
+!s100 _dMRHKT2S<:Qo6?k5JAT=0
+R16
+33
+Z66 !s110 1729109561
+!i10b 1
+Z67 !s108 1729109561.000000
+Z68 !s90 -reportprogress|300|-work|work|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_pc_fetch_logic.vhd|
+Z69 !s107 /home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_pc_fetch_logic.vhd|
+!i113 0
+R21
+R39
+Abehavior
+R12
+R13
+DEx4 work 14 tb_fetch_logic 0 22 QnGFID4eUW@Ya`Nhn]Z]X3
+!i122 12
+l34
+L16 70
+V`2BUY[>TzQSU>bdZ]C5M;3
+!s100 KoSR^L=G]11;O3mEGm8L43
+R16
+33
+R66
+!i10b 1
+R67
+R68
+R69
+!i113 0
+R21
+R39

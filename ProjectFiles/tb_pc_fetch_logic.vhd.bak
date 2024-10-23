@@ -22,7 +22,7 @@ architecture behavior of tb_fetch_logic is
   component pc_fetch_logic
   port(i_CLK        : in std_logic;     -- Clock input
        i_RST        : in std_logic;     -- Reset input
-     --  i_WE         : in std_logic;     -- Write enable input
+      i_WE         : in std_logic;     -- Write enable input
        i_D          : in std_logic_vector(31 downto 0);     -- Data value input
        o_Q          : out std_logic_vector(31 downto 0));   -- Data value output
   end component;
@@ -33,8 +33,8 @@ architecture behavior of tb_fetch_logic is
 
 begin
 
-  DUT: pc_fetch_logic 
-  generic map(N => 32)
+  DUT:pc_fetch_logic 
+  --generic map(N => 32)
   port map(i_CLK => s_CLK, 
            i_RST => s_RST,
            i_D   => s_D,
