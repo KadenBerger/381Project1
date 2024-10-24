@@ -14,7 +14,6 @@ port
 (i_opcode : in std_logic_vector(5 downto 0);
 i_funct : in std_logic_vector(5 downto 0);
 o_Ctrl_Unt : out std_logic_vector(14 downto 0));
-
 end control_unit;
 
 -- architecture

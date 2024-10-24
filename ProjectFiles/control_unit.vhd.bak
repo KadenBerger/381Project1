@@ -10,9 +10,11 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 -- entity
 entity control_unit is
-??????port(i_opcode  ???  ????: in std_logic_vector(5 downto 0);
-??????     i_funct??????  ????: in std_logic_vector(5 downto 0);
-??????     o_Ctrl_Unt?????????: out std_logic_vector(14 downto 0));
+port
+(i_opcode : in std_logic_vector(5 downto 0);
+i_funct : in std_logic_vector(5 downto 0);
+o_Ctrl_Unt : out std_logic_vector(14 downto 0));
+
 end control_unit;
 
 -- architecture
@@ -38,7 +40,7 @@ with i_funct select s_RTYPE <=
     "000000000000000"  when others;
 
 with i_opcode select o_Ctrl_Unt <=
-    s_RTYPE  ?????    when "000000", -- RTYPE
+    s_RTYPE when "000000", -- RTYPE
     "001111000100100"  when "001000", -- addi
 
     "000000000000001"  when "010100", -- halt

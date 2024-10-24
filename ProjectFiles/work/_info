@@ -1,8 +1,10 @@
 m255
 K4
 z2
-!s12c _opt1
+!s12c _opt2
 Z0 !s99 nomlopt
+!s12c _opt1
+R0
 Z1 !s12c _opt
 R0
 R1
@@ -40,304 +42,2287 @@ R4
 R5
 R6
 R7
-o-quiet -auto_acc_if_foreign -work work +acc
+Z10 o-quiet -auto_acc_if_foreign -work work +acc
 R8
 n@_opt1
 R9
-Ebarrel_shifter
-Z10 w1728445944
-Z11 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R2
+T_opt2
+!s110 1729700063
+V`SRHoU]_7l[R>=:o9>Vd52
+04 18 8 work tb_datapath_newalu behavior 1
+=1-7486e228a247-671920df-8f4a7-4969
+R0
+R4
+R5
+R6
+R7
+R10
+R8
+n@_opt2
+R9
+R2
+Eadder
+Z11 w1578332330
 Z12 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z13 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 2
+!i122 13
 R2
-Z14 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd
-Z15 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd
+Z14 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/Adder.vhd
+Z15 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/Adder.vhd
 l0
-L20 1
-VD6E:8JdFTc=Nm=aHN_c^K3
-!s100 ekoOLP<7?<Fl5LA6O69d;1
-Z16 OL;C;2024.2;79
-32
-Z17 !s110 1728445946
+Z16 L26 1
+Va]bmQmLQ2P_Ad>?i1V_H63
+!s100 ?M@C[n:@^fhmgGDG`5ibH3
+Z17 OL;C;2024.2;79
+33
+Z18 !s110 1729700056
 !i10b 1
-Z18 !s108 1728445946.000000
-Z19 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd|
-Z20 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd|
+Z19 !s108 1729700056.000000
+Z20 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/Adder.vhd|
+Z21 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/Adder.vhd|
 !i113 0
-Z21 o-work work
-Z22 tExplicit 1 CvgOpt 0
+Z22 o-work work
+Z23 tExplicit 1 NoCoverage 1 CvgOpt 0
 Abehavior
-R11
 R12
 R13
-DEx4 work 14 barrel_shifter 0 22 D6E:8JdFTc=Nm=aHN_c^K3
-!i122 2
-l32
-L28 16
-VRj^[lRHiJYLz<>bSz2Dmi3
-!s100 @JXzdfj^?D^]J05n[X]kJ1
-R16
-32
+DEx4 work 5 adder 0 22 a]bmQmLQ2P_Ad>?i1V_H63
+!i122 13
+l36
+Z24 L35 11
+V?]hja<;e8e:0Y[naAgl943
+!s100 cB67aGlEFcN>h>lDnF1Sh3
 R17
-!i10b 1
+33
 R18
+!i10b 1
 R19
 R20
-!i113 0
 R21
+!i113 0
 R22
-Econtrol_unit
-Z23 w1729091219
+R23
+Eaddersubtractor_n
+Z25 w1729222760
 R12
 R13
-!i122 7
-Z24 d/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles
-Z25 8/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/control_unit.vhd
-Z26 F/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/control_unit.vhd
+!i122 14
+R2
+Z26 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/addersubtractor_n.vhd
+Z27 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/addersubtractor_n.vhd
 l0
-Z27 L12 1
-VYT27699o_o`RAdCgO2ZBW3
-!s100 1I>HgaOjYoA2h^KT;T<Gz3
-R16
-32
-Z28 !s110 1729109232
+Z28 L19 1
+VR>Iec?3E?O1gYd`A`4AfZ2
+!s100 48PAW27]P9h9jn6?=R0621
+R17
+33
+R18
 !i10b 1
-Z29 !s108 1729109231.000000
-Z30 !s90 -reportprogress|300|-work|work|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/control_unit.vhd|
-Z31 !s107 /home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/control_unit.vhd|
+R19
+Z29 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/addersubtractor_n.vhd|
+Z30 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/addersubtractor_n.vhd|
 !i113 0
-R21
 R22
+R23
+Astructural
+R12
+R13
+DEx4 work 17 addersubtractor_n 0 22 R>Iec?3E?O1gYd`A`4AfZ2
+!i122 14
+l59
+L29 55
+V@Vkz>[1MVla60Lg:0eGiT3
+!s100 S7hBVSRS8]G8bL1`EY`^33
+R17
+33
+R18
+!i10b 1
+R19
+R29
+R30
+!i113 0
+R22
+R23
+Ealu
+Z31 w1729699092
+Z32 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R12
+R13
+!i122 15
+R2
+Z33 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/ALU.vhd
+Z34 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/ALU.vhd
+l0
+R28
+VPoI`6iZ^U5BeDQm;IN^P83
+!s100 U5o2HX?;?_=V?W`mUJ4NI3
+R17
+33
+R18
+!i10b 1
+R19
+Z35 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/ALU.vhd|
+Z36 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/ALU.vhd|
+!i113 0
+R22
+R23
+Abehavior
+R32
+R12
+R13
+DEx4 work 3 alu 0 22 PoI`6iZ^U5BeDQm;IN^P83
+!i122 15
+l121
+L31 169
+VbO:ZLA<in8RGR]zUN2:We2
+!s100 ^L7Ic;CnU8KNDJ_lMG?9>1
+R17
+33
+R18
+!i10b 1
+R19
+R35
+R36
+!i113 0
+R22
+R23
+Ealu_control
+Z37 w1729479239
+R32
+R12
+R13
+!i122 16
+R2
+Z38 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/ALU_Control.vhd
+Z39 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/ALU_Control.vhd
+l0
+R28
+VCB40`]HM@cYV5d3NMkYB72
+!s100 8IU@_h:[`RAL;4O`i>8Nz0
+R17
+33
+R18
+!i10b 1
+R19
+Z40 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/ALU_Control.vhd|
+Z41 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/ALU_Control.vhd|
+!i113 0
+R22
+R23
+Abehavior
+R32
+R12
+R13
+DEx4 work 11 alu_control 0 22 CB40`]HM@cYV5d3NMkYB72
+!i122 16
+l33
+L26 76
+VDc^NYh61oUFUDZ:7d^gm@2
+!s100 B=5O4W7g7@6JIEi5`5:^h2
+R17
+33
+R18
+!i10b 1
+R19
+R40
+R41
+!i113 0
+R22
+R23
+Eandg2
+Z42 w1575899276
+R12
+R13
+!i122 17
+R2
+Z43 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/andg2.vhd
+Z44 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/andg2.vhd
+l0
+Z45 L23 1
+VzJ2OoPJ=<ja2?Y;OcjQk;3
+!s100 YT?bGzEmcFo:DlnoC^B4_0
+R17
+33
+R18
+!i10b 1
+R19
+Z46 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/andg2.vhd|
+Z47 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/andg2.vhd|
+!i113 0
+R22
+R23
 Adataflow
 R12
 R13
-DEx4 work 12 control_unit 0 22 YT27699o_o`RAdCgO2ZBW3
-!i122 7
+DEx4 work 5 andg2 0 22 zJ2OoPJ=<ja2?Y;OcjQk;3
+!i122 17
+l32
+Z48 L31 6
+V3oa1[>iDZj;2zVo:oz1>e2
+!s100 I`@Z@UBObS]<7m8bPgKUS1
+R17
+33
+R18
+!i10b 1
+R19
+R46
+R47
+!i113 0
+R22
+R23
+Eandg2_n
+Z49 w1729052003
+R12
+R13
+!i122 19
+R2
+Z50 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/andg_N.vhd
+Z51 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/andg_N.vhd
+l0
+Z52 L21 1
+V7fWl5SaQCPBddaWmL9f=k1
+!s100 26O?z5R9mbXbm`O=MAB<Z1
+R17
+33
+R18
+!i10b 1
+R19
+Z53 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/andg_N.vhd|
+Z54 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/andg_N.vhd|
+!i113 0
+R22
+R23
+Adataflow
+R12
+R13
+DEx4 work 7 andg2_n 0 22 7fWl5SaQCPBddaWmL9f=k1
+!i122 19
+l30
+Z55 L29 6
+VcBiX7n`[87KaFjn?eF81m2
+!s100 PfNKLGP7Zz[:c1SQ<h0oL1
+R17
+33
+R18
+!i10b 1
+R19
+R53
+R54
+!i113 0
+R22
+R23
+Ebarrel_shifter
+Z56 w1729091633
+R32
+R12
+R13
+!i122 20
+R2
+Z57 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd
+Z58 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd
+l0
+Z59 L20 1
+VMn_`H6S2[KTPINM8G:[8^3
+!s100 dnT8@c_K:0JHz9L]Fja[P0
+R17
+33
+R18
+!i10b 1
+R19
+Z60 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd|
+Z61 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/barrel_shifter.vhd|
+!i113 0
+R22
+R23
+Abehavior
+R32
+R12
+R13
+DEx4 work 14 barrel_shifter 0 22 Mn_`H6S2[KTPINM8G:[8^3
+!i122 20
+l45
+L29 101
+VVUa8_Sd9<U57S7fjcU;M@0
+!s100 l5Bg<hej2A@l38>_50=k^2
+R17
+33
+R18
+!i10b 1
+R19
+R60
+R61
+!i113 0
+R22
+R23
+Econtrol_unit
+Z62 w1729699968
+R12
+R13
+!i122 21
+R2
+Z63 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/control_unit.vhd
+Z64 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/control_unit.vhd
+l0
+Z65 L12 1
+V?9d<L^nERHcdlh<@Kl7P^1
+!s100 1I>HgaOjYoA2h^KT;T<Gz3
+R17
+33
+Z66 !s110 1729700057
+!i10b 1
+R19
+Z67 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/control_unit.vhd|
+Z68 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/control_unit.vhd|
+!i113 0
+R22
+R23
+Adataflow
+R12
+R13
+DEx4 work 12 control_unit 0 22 ?9d<L^nERHcdlh<@Kl7P^1
+!i122 21
 l23
 L21 43
-VNc]k?n8jI2o7RogP>1Nmg0
+VH?b?BOn]SZ7jZz@F:6<H`1
 !s100 UPl17db3`URWZg>O;Gl:T1
-R16
-32
-R28
+R17
+33
+R66
 !i10b 1
-R29
-R30
-R31
+R19
+R67
+R68
 !i113 0
-R21
 R22
+R23
+Edatapath_first
+Z69 w1727407291
+R32
+R12
+R13
+!i122 23
+R2
+Z70 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/datapath_first.vhd
+Z71 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/datapath_first.vhd
+l0
+R28
+VeL@AEWO[Y@8<lWQMlFMFA1
+!s100 MWF847VRcHUP3WKaQ:ZkD0
+R17
+33
+R66
+!i10b 1
+Z72 !s108 1729700057.000000
+Z73 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/datapath_first.vhd|
+Z74 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/datapath_first.vhd|
+!i113 0
+R22
+R23
+Astructural
+R32
+R12
+R13
+DEx4 work 14 datapath_first 0 22 eL@AEWO[Y@8<lWQMlFMFA1
+!i122 23
+l69
+L36 69
+V[FKgT6_XM44n73c8a;b;h2
+!s100 PU:f=D]P`LoN;Y3i=G`<E3
+R17
+33
+R66
+!i10b 1
+R72
+R73
+R74
+!i113 0
+R22
+R23
+Edatapath_newalu
+Z75 w1729723498
+R32
+R12
+R13
+!i122 67
+R2
+Z76 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/datapath_NewALU.vhd
+Z77 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/datapath_NewALU.vhd
+l0
+R59
+VQkgJN^^7OU9U:]kU[ceAl0
+!s100 ?9_22_?0]fW6PWeeGbT`b1
+R17
+33
+Z78 !s110 1729723501
+!i10b 1
+Z79 !s108 1729723501.000000
+Z80 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/datapath_NewALU.vhd|
+Z81 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/datapath_NewALU.vhd|
+!i113 0
+R22
+R23
+Astructural
+R32
+R12
+R13
+DEx4 work 15 datapath_newalu 0 22 QkgJN^^7OU9U:]kU[ceAl0
+!i122 67
+l103
+L42 122
+VDdWBlU^6`JKC^DSn8_82N0
+!s100 0b@mO6VXkoJ??DHb489XZ2
+R17
+33
+R78
+!i10b 1
+R79
+R80
+R81
+!i113 0
+R22
+R23
+Edatapath_second
+Z82 w1727653733
+R32
+R12
+R13
+!i122 25
+R2
+Z83 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/datapath_second.vhd
+Z84 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/datapath_second.vhd
+l0
+R28
+V2AQPhYcb<5?mU=<z4aU?C1
+!s100 PH2>jTAJaXb]W>^_b^Jfk3
+R17
+33
+R66
+!i10b 1
+R72
+Z85 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/datapath_second.vhd|
+Z86 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/datapath_second.vhd|
+!i113 0
+R22
+R23
+Astructural
+R32
+R12
+R13
+DEx4 work 15 datapath_second 0 22 2AQPhYcb<5?mU=<z4aU?C1
+!i122 25
+l100
+L39 115
+VRILl86lQ5O2YE0Pe_?DT52
+!s100 DPdRzU7TJBcXaEn]ml8]k3
+R17
+33
+R66
+!i10b 1
+R72
+R85
+R86
+!i113 0
+R22
+R23
+Edecoder_5to32
+Z87 w1727316857
+R12
+R13
+!i122 26
+R2
+Z88 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/decoder_5to32.vhd
+Z89 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/decoder_5to32.vhd
+l0
+R52
+V:SCH10CZ1h<?e`61zg6P:2
+!s100 I4Ya7nfJb6Um>a56m]>T83
+R17
+33
+R66
+!i10b 1
+R72
+Z90 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/decoder_5to32.vhd|
+Z91 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/decoder_5to32.vhd|
+!i113 0
+R22
+R23
+Adataflow
+R12
+R13
+DEx4 work 13 decoder_5to32 0 22 :SCH10CZ1h<?e`61zg6P:2
+!i122 26
+l29
+L28 43
+V0CgZD:B;hhV2>Lm^:UIVJ1
+!s100 PN^mGQ8<7j``I94@QEXmQ1
+R17
+33
+R66
+!i10b 1
+R72
+R90
+R91
+!i113 0
+R22
+R23
+Edffg
+Z92 w1577987095
+R12
+R13
+!i122 27
+R2
+Z93 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/dffg.vhd
+Z94 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/dffg.vhd
+l0
+R45
+VH7[7fQclb0RF5ljXe<KKY0
+!s100 T4gcXQGMCgKJbn8XhBM;b0
+R17
+33
+R66
+!i10b 1
+R72
+Z95 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/dffg.vhd|
+Z96 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/dffg.vhd|
+!i113 0
+R22
+R23
+Amixed
+R12
+R13
+DEx4 work 4 dffg 0 22 H7[7fQclb0RF5ljXe<KKY0
+!i122 27
+l37
+L33 29
+VM>A>L<U`E78`0<h>bR]Yh3
+!s100 iOdlTUid@@]UimFK_53^C1
+R17
+33
+R66
+!i10b 1
+R72
+R95
+R96
+!i113 0
+R22
+R23
 Efetch_logic
-Z32 w1729108966
+Z97 w1729108966
 R12
 R13
 !i122 9
-R24
-Z33 8/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic.vhd
-Z34 F/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic.vhd
+Z98 d/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles
+Z99 8/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic.vhd
+Z100 F/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic.vhd
 l0
-L13 1
+Z101 L13 1
 VRhB]_JHhA5J7Z`e6Gn?TQ1
 !s100 bijzgkG6JAczDUHK2@`Z32
-R16
+R17
 33
-Z35 !s110 1729109556
+Z102 !s110 1729109556
 !i10b 1
-Z36 !s108 1729109556.000000
-Z37 !s90 -reportprogress|300|-work|work|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic.vhd|
-Z38 !s107 /home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic.vhd|
+Z103 !s108 1729109556.000000
+Z104 !s90 -reportprogress|300|-work|work|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic.vhd|
+Z105 !s107 /home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic.vhd|
 !i113 0
-R21
-Z39 tExplicit 1 NoCoverage 1 CvgOpt 0
+R22
+R23
 Astructural
 R12
 R13
 DEx4 work 11 fetch_logic 0 22 RhB]_JHhA5J7Z`e6Gn?TQ1
 !i122 9
 l35
-L23 27
+Z106 L23 27
 VlSl0d@5h8i<4jA]mcLS523
 !s100 ]9=c8b?lUbz9_NKIWDk0P0
-R16
+R17
 33
-R35
+R102
 !i10b 1
-R36
-R37
-R38
+R103
+R104
+R105
 !i113 0
-R21
-R39
+R22
+R23
 Efetch_logic_dffg
-Z40 w1729109516
+Z107 w1729109516
 R12
 R13
 !i122 10
-R24
-Z41 8/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic_dffg.vhd
-Z42 F/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic_dffg.vhd
+R98
+Z108 8/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic_dffg.vhd
+Z109 F/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic_dffg.vhd
 l0
-R27
+R65
 V_9z[`WcZg40lWBioJEca72
 !s100 >iYWiTQ3^QTYQYG[:zBc21
-R16
+R17
 33
-Z43 !s110 1729109558
+Z110 !s110 1729109558
 !i10b 1
-Z44 !s108 1729109558.000000
-Z45 !s90 -reportprogress|300|-work|work|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic_dffg.vhd|
-Z46 !s107 /home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic_dffg.vhd|
+Z111 !s108 1729109558.000000
+Z112 !s90 -reportprogress|300|-work|work|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic_dffg.vhd|
+Z113 !s107 /home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic_dffg.vhd|
 !i113 0
-R21
-R39
+R22
+R23
 Amixed
 R12
 R13
 DEx4 work 16 fetch_logic_dffg 0 22 _9z[`WcZg40lWBioJEca72
 !i122 10
 l26
-L22 22
+Z114 L22 22
 V?Qa8LnBX47oG@ciDHQhE01
 !s100 nf<E6=anIgT74H>z=z8ZO0
-R16
+R17
 33
-R43
+R110
 !i10b 1
-R44
-R45
-R46
+R111
+R112
+R113
 !i113 0
-R21
-R39
-Emem
-Z47 w1697635538
-R11
+R22
+R23
+Efulladder
+Z115 w1726078373
 R12
 R13
-!i122 0
+!i122 28
 R2
-Z48 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd
-Z49 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd
+Z116 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/fulladder.vhd
+Z117 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/fulladder.vhd
+l0
+R52
+VkHT90miAN5GTkzHc2TOfL3
+!s100 LCImX]GS>HH?;FN8FHjQo0
+R17
+33
+R66
+!i10b 1
+R72
+Z118 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/fulladder.vhd|
+Z119 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/fulladder.vhd|
+!i113 0
+R22
+R23
+Astructural
+R12
+R13
+DEx4 work 9 fulladder 0 22 kHT90miAN5GTkzHc2TOfL3
+!i122 28
+l56
+L29 58
+Vb2L[FXI=ND4CF891z8iKB1
+!s100 kPH:5Wng2j8bjkMYgP@5F2
+R17
+33
+R66
+!i10b 1
+R72
+R118
+R119
+!i113 0
+R22
+R23
+Efulladder_n
+Z120 w1728926984
+R12
+R13
+!i122 29
+R2
+Z121 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/fulladder_N.vhd
+Z122 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/fulladder_N.vhd
+l0
+R28
+VZc7RWMXGQfQ[W7K75]bRM1
+!s100 ;E[P6ATfW8DmQ1Do:>i@k2
+R17
+33
+R66
+!i10b 1
+R72
+Z123 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/fulladder_N.vhd|
+Z124 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/fulladder_N.vhd|
+!i113 0
+R22
+R23
+Astructural
+R12
+R13
+DEx4 work 11 fulladder_n 0 22 Zc7RWMXGQfQ[W7K75]bRM1
+!i122 29
+l47
+L29 38
+VEezJVlX_69PYTDZlQ]0o<0
+!s100 LdIl[JRMIVK^ED;OM9OL23
+R17
+33
+R66
+!i10b 1
+R72
+R123
+R124
+!i113 0
+R22
+R23
+Einvg
+R42
+R12
+R13
+!i122 30
+R2
+Z125 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/invg.vhd
+Z126 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/invg.vhd
+l0
+R45
+VzJhOLc0g_4RfSF]IXa;:73
+!s100 _XK?_^5z0Rm1<k12?;5R?2
+R17
+33
+R66
+!i10b 1
+R72
+Z127 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/invg.vhd|
+Z128 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/invg.vhd|
+!i113 0
+R22
+R23
+Adataflow
+R12
+R13
+DEx4 work 4 invg 0 22 zJhOLc0g_4RfSF]IXa;:73
+!i122 30
+l31
+L30 6
+VT@AA60h>IXVJ?D^`RRiZk1
+!s100 bk7I76o8e1LURdoZEQb8H0
+R17
+33
+R66
+!i10b 1
+R72
+R127
+R128
+!i113 0
+R22
+R23
+Emem
+Z129 w1575899277
+R32
+R12
+R13
+!i122 31
+R2
+Z130 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd
+Z131 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd
 l0
 L8 1
-Vl8<PCiN;cU;BN3M[A<;IE3
+VQ_Y953^@mg4h;HoXAPe2d2
 !s100 fRlcaiTJZJ1H;nZh;8=LI3
-R16
-32
-Z50 !s110 1728439103
+R17
+33
+R66
 !i10b 1
-Z51 !s108 1728439103.000000
-Z52 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd|
-Z53 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd|
+R72
+Z132 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd|
+Z133 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/mem.vhd|
 !i113 0
-R21
 R22
+R23
 Artl
-R11
+R32
 R12
 R13
-DEx4 work 3 mem 0 22 l8<PCiN;cU;BN3M[A<;IE3
-!i122 0
+DEx4 work 3 mem 0 22 Q_Y953^@mg4h;HoXAPe2d2
+!i122 31
 l37
 L27 24
-V`6^NbPhKNmSBg:`:Un8;g3
+VcdMDH_i8fEBbejOT7K`iC2
 !s100 OI8_3><BhDkT3l3n8`OXd3
-R16
-32
-R50
+R17
+33
+R66
 !i10b 1
-R51
-R52
-R53
+R72
+R132
+R133
 !i113 0
-R21
 R22
-Etb_control_unit
-Z54 w1729103755
-Z55 DPx3 std 3 env 0 22 g[fj8WJKOa<0Y`zWY3UD70
-R11
-Z56 DPx4 ieee 16 std_logic_textio 0 22 8]8<fKiYoHe;_IDO3kmNH2
+R23
+Emips_processor
+Z134 w1729784711
+Z135 DPx4 work 10 mips_types 0 22 K9i@2cj`K44nUjCX<?`5m1
 R12
 R13
-!i122 11
-R24
-Z57 8/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_control_unit.vhd
-Z58 F/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_control_unit.vhd
+!i122 88
+R2
+Z136 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/MIPS_Processor.vhd
+Z137 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/MIPS_Processor.vhd
 l0
-L17 1
-VM7d`O6481ODoR:iD[J3LM2
-!s100 ;5j0b4@Jcdj@m9]^C=XkB3
-R16
+R45
+VcOjB4z7<ChQMXeaJ=c@Jh2
+!s100 H[0875z5OZm2QnkRY7o5_2
+R17
 33
-Z59 !s110 1729109559
+Z138 !s110 1729784712
 !i10b 1
-Z60 !s108 1729109559.000000
-Z61 !s90 -reportprogress|300|-work|work|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_control_unit.vhd|
-Z62 !s107 /home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_control_unit.vhd|
+Z139 !s108 1729784712.000000
+Z140 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/MIPS_Processor.vhd|
+Z141 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/MIPS_Processor.vhd|
 !i113 0
-R21
-R39
-Abehavior
-R55
-R11
-R56
+R22
+R23
+Astructure
+R135
 R12
 R13
-DEx4 work 15 tb_control_unit 0 22 M7d`O6481ODoR:iD[J3LM2
-!i122 11
-l40
-L21 195
-Vina[l<_chgYA;S04WQOlD1
-!s100 M@^P0]zc2jCL?=V4dTM=m2
-R16
+Z142 DEx4 work 14 mips_processor 0 22 cOjB4z7<ChQMXeaJ=c@Jh2
+!i122 88
+l153
+Z143 L35 261
+Z144 Vn=<?l1z;Hc`Ql`ha2N4:U2
+Z145 !s100 ^JnLSa_coE_nkL1XQ7RO@3
+R17
 33
-R59
+R138
 !i10b 1
-R60
-R61
-R62
+R139
+R140
+R141
 !i113 0
-R21
-R39
+R22
+R23
+Pmips_types
+R12
+R13
+!i122 32
+Z146 w1697635538
+R2
+Z147 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/MIPS_types.vhd
+Z148 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/MIPS_types.vhd
+l0
+L15 13
+VK9i@2cj`K44nUjCX<?`5m1
+!s100 9LKPn?UhVC15^8Xc1`G4g2
+R17
+33
+R66
+!i10b 1
+R72
+Z149 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/MIPS_types.vhd|
+Z150 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/MIPS_types.vhd|
+!i113 0
+R22
+R23
+Bbody
+R135
+R12
+R13
+!i122 32
+l0
+L29 3
+VF2P]Hz4YYb80ZI4EA64422
+!s100 ZNa@oSJaSGzJZZUQAmX1U2
+R17
+33
+R66
+!i10b 1
+R72
+R149
+R150
+!i113 0
+R22
+R23
+Emultiplexer_32to1
+Z151 w1727311519
+R32
+R12
+R13
+!i122 65
+R2
+Z152 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/multiplexer_32to1.vhd
+Z153 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/multiplexer_32to1.vhd
+l0
+R52
+VVnGf`HJ>>ZJm2=^W^MWH83
+!s100 Ek1H^1Mf97kUi@V3i8B?j0
+R17
+33
+Z154 !s110 1729700059
+!i10b 1
+Z155 !s108 1729700059.000000
+Z156 !s90 -reportprogress|30|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/multiplexer_32to1.vhd|
+Z157 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/multiplexer_32to1.vhd|
+!i113 0
+R22
+R23
+Adataflow
+R32
+R12
+R13
+DEx4 work 17 multiplexer_32to1 0 22 VnGf`HJ>>ZJm2=^W^MWH83
+!i122 65
+l61
+L60 38
+VH?^@>:;ST9@b2LFW8BYU70
+!s100 _>A?YdCkQ8F4fZ>MhShCd1
+R17
+33
+R154
+!i10b 1
+R155
+R156
+R157
+!i113 0
+R22
+R23
+Emultiplier
+R11
+R12
+R13
+!i122 33
+R2
+Z158 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/Multiplier.vhd
+Z159 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/Multiplier.vhd
+l0
+R16
+VjHm2jMe9M7@j3_BD0E74i3
+!s100 _?e0QXZc1];i5lJhWOb7@0
+R17
+33
+R66
+!i10b 1
+R72
+Z160 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/Multiplier.vhd|
+Z161 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/Multiplier.vhd|
+!i113 0
+R22
+R23
+Abehavior
+R12
+R13
+DEx4 work 10 multiplier 0 22 jHm2jMe9M7@j3_BD0E74i3
+!i122 33
+l36
+R24
+V;Dz6LVdZC^_^Y4ZIEPX@c0
+!s100 Q4UZP;mn^zJ6k_M>:>EDR3
+R17
+33
+R66
+!i10b 1
+R72
+R160
+R161
+!i113 0
+R22
+R23
+Emux2t1
+Z162 w1725547968
+R12
+R13
+!i122 34
+R2
+Z163 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/mux2t1.vhd
+Z164 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/mux2t1.vhd
+l0
+Z165 L22 1
+V3fiI]bBmkOoM[NneUM:Mi1
+!s100 @=z;JP_JJL:WHT;aUebcd3
+R17
+33
+R66
+!i10b 1
+R72
+Z166 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/mux2t1.vhd|
+Z167 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/mux2t1.vhd|
+!i113 0
+R22
+R23
+Ackt1
+R12
+R13
+DEx4 work 6 mux2t1 0 22 3fiI]bBmkOoM[NneUM:Mi1
+!i122 34
+l59
+L30 49
+V]QXZV;kOe^P1OQEoHS?903
+!s100 ;JOTXG?5gAJbAF:dL2Zj`3
+R17
+33
+R66
+!i10b 1
+R72
+R166
+R167
+!i113 0
+R22
+R23
+Emux2t1_dataflow
+Z168 w1725931638
+R12
+R13
+!i122 22
+R2
+Z169 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/dataflow_mux2t1.vhd
+Z170 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/dataflow_mux2t1.vhd
+l0
+R52
+V9Q?Y3zXG7C`HdmT<fbC][3
+!s100 zlBMIJdl_Km7bbgm`Pj?i2
+R17
+33
+R66
+!i10b 1
+R72
+Z171 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/dataflow_mux2t1.vhd|
+Z172 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/dataflow_mux2t1.vhd|
+!i113 0
+R22
+R23
+Amux2t1
+R12
+R13
+DEx4 work 15 mux2t1_dataflow 0 22 9Q?Y3zXG7C`HdmT<fbC][3
+!i122 22
+l31
+L29 8
+Vf1ThLVBKGoEAdJeIYfzUe3
+!s100 :Y_1;=D`kcC5;?3LO5kVd3
+R17
+33
+R66
+!i10b 1
+R72
+R171
+R172
+!i113 0
+R22
+R23
+Emux2t1_n
+Z173 w1579724842
+R12
+R13
+!i122 35
+R2
+Z174 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/mux2t1_N.vhd
+Z175 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/mux2t1_N.vhd
+l0
+R52
+VX=8caLddO;GBDIdffNOz`3
+!s100 a8b75l9QH119Si`4JcQ1J0
+R17
+33
+R66
+!i10b 1
+R72
+Z176 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/mux2t1_N.vhd|
+Z177 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/mux2t1_N.vhd|
+!i113 0
+R22
+R23
+Astructural
+R12
+R13
+DEx4 work 8 mux2t1_n 0 22 X=8caLddO;GBDIdffNOz`3
+!i122 35
+l39
+L30 21
+VS;7^3=hDiT7zH78Vm1Xhk1
+!s100 W>5MMWO2LBg`K8[P>h>Ye1
+R17
+33
+R66
+!i10b 1
+R72
+R176
+R177
+!i113 0
+R22
+R23
+Enorg2_n
+Z178 w1729698471
+R12
+R13
+!i122 36
+R2
+Z179 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/norg2_N.vhd
+Z180 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/norg2_N.vhd
+l0
+L18 1
+VKmecOk2oOD^nBo:liIc761
+!s100 UHH]=FhlWim3d<Y0Cz?Vl1
+R17
+33
+R66
+!i10b 1
+R72
+Z181 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/norg2_N.vhd|
+Z182 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/norg2_N.vhd|
+!i113 0
+R22
+R23
+Adataflow
+R12
+R13
+DEx4 work 7 norg2_n 0 22 KmecOk2oOD^nBo:liIc761
+!i122 36
+l27
+L26 6
+V;7JV0fYfIi:QCOn5G2c?D0
+!s100 4D0WGYF29gFo_aNAb6dVk2
+R17
+33
+R66
+!i10b 1
+R72
+R181
+R182
+!i113 0
+R22
+R23
+Eonescomp
+Z183 w1726018123
+R12
+R13
+!i122 37
+R2
+Z184 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/onescomp.vhd
+Z185 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/onescomp.vhd
+l0
+R52
+VgA0<Tg8BSR0[Ul5DWc<oJ3
+!s100 ?`kPlFz?CSn`5obQ`eWlI1
+R17
+33
+R66
+!i10b 1
+R72
+Z186 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/onescomp.vhd|
+Z187 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/onescomp.vhd|
+!i113 0
+R22
+R23
+Adataflow
+R12
+R13
+DEx4 work 8 onescomp 0 22 gA0<Tg8BSR0[Ul5DWc<oJ3
+!i122 37
+l29
+L27 7
+VXcO<kD9?<iNC;^6H2<OPS1
+!s100 AGAUUHg17_3_>Md`Qmj^Q1
+R17
+33
+R66
+!i10b 1
+R72
+R186
+R187
+!i113 0
+R22
+R23
+Eonescomp_n
+Z188 w1726017363
+R12
+R13
+!i122 38
+R2
+Z189 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/onescomp_N.vhd
+Z190 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/onescomp_N.vhd
+l0
+R52
+VX;;jF1HPAmR5K2]0Y1QUU1
+!s100 ]Y8dX4TL5i_YYjjZbN_W=0
+R17
+33
+R66
+!i10b 1
+R72
+Z191 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/onescomp_N.vhd|
+Z192 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/onescomp_N.vhd|
+!i113 0
+R22
+R23
+Astructural
+R12
+R13
+DEx4 work 10 onescomp_n 0 22 X;;jF1HPAmR5K2]0Y1QUU1
+!i122 38
+l37
+L27 21
+VIdn3Nc?@YajQlFNHLET2<2
+!s100 ZePikh0Bl3QMYa0iP_MBE1
+R17
+33
+R66
+!i10b 1
+R72
+R191
+R192
+!i113 0
+R22
+R23
+Eorg2
+R42
+R12
+R13
+!i122 39
+R2
+Z193 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/org2.vhd
+Z194 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/org2.vhd
+l0
+R45
+V0FzB9ATDX9TV=M:n@=VB83
+!s100 bGQ1F9eW^Q17OoL9h4g7z2
+R17
+33
+Z195 !s110 1729700058
+!i10b 1
+R72
+Z196 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/org2.vhd|
+Z197 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/org2.vhd|
+!i113 0
+R22
+R23
+Adataflow
+R12
+R13
+DEx4 work 4 org2 0 22 0FzB9ATDX9TV=M:n@=VB83
+!i122 39
+l32
+R48
+V0JC>N7cRXc=9bni@>dg7o3
+!s100 h5_AzR3TdRA0a_K=dQ>mI2
+R17
+33
+R195
+!i10b 1
+R72
+R196
+R197
+!i113 0
+R22
+R23
+Eorg2_n
+Z198 w1729052119
+R12
+R13
+!i122 40
+R2
+Z199 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/org2_N.vhd
+Z200 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/org2_N.vhd
+l0
+R52
+VFVg;@hzT^bU[LelD@XWD03
+!s100 ]QdFz`MdeH2^I1?PQMm4h0
+R17
+33
+R195
+!i10b 1
+Z201 !s108 1729700058.000000
+Z202 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/org2_N.vhd|
+Z203 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/org2_N.vhd|
+!i113 0
+R22
+R23
+Adataflow
+R12
+R13
+DEx4 work 6 org2_n 0 22 FVg;@hzT^bU[LelD@XWD03
+!i122 40
+l30
+R55
+V5@308d;ML:NlOH2BB5QY31
+!s100 D@=JB;K]JheN5f=Q;0dm<0
+R17
+33
+R195
+!i10b 1
+R201
+R202
+R203
+!i113 0
+R22
+R23
+Epc_fetch_logic
+R62
+R12
+R13
+!i122 41
+R2
+Z204 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/pc_fetch_logic.vhd
+Z205 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/pc_fetch_logic.vhd
+l0
+R101
+Vz=2GS_JcibM7YXcMD>]VP3
+!s100 M;9QHGXTjeXgOc<Y1=Ble1
+R17
+33
+R195
+!i10b 1
+R201
+Z206 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/pc_fetch_logic.vhd|
+Z207 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/pc_fetch_logic.vhd|
+!i113 0
+R22
+R23
+Astructural
+R12
+R13
+DEx4 work 14 pc_fetch_logic 0 22 z=2GS_JcibM7YXcMD>]VP3
+!i122 41
+l35
+R106
+Va^WfK40c8EXR@i]7NHofb2
+!s100 DJcQY`j_^C3WTBEEOfh:L1
+R17
+33
+R195
+!i10b 1
+R201
+R206
+R207
+!i113 0
+R22
+R23
+Epc_fetch_logic_dffg
+R62
+R12
+R13
+!i122 42
+R2
+Z208 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/pc_fetch_logic_dffg.vhd
+Z209 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/pc_fetch_logic_dffg.vhd
+l0
+R65
+V<Yz?bba16^VkCD8=akEQ23
+!s100 dm6>;f9kkP__<SUTJzmf<1
+R17
+33
+R195
+!i10b 1
+R201
+Z210 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/pc_fetch_logic_dffg.vhd|
+Z211 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/pc_fetch_logic_dffg.vhd|
+!i113 0
+R22
+R23
+Amixed
+R12
+R13
+DEx4 work 19 pc_fetch_logic_dffg 0 22 <Yz?bba16^VkCD8=akEQ23
+!i122 42
+l26
+R114
+V_SVUY0Snjob;ghb1hL3F03
+!s100 bef32Q<PCLkaeIK_5jcbn0
+R17
+33
+R195
+!i10b 1
+R201
+R210
+R211
+!i113 0
+R22
+R23
+Ereg
+Z212 w1578332352
+R12
+R13
+!i122 43
+R2
+Z213 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/Reg.vhd
+Z214 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/Reg.vhd
+l0
+R16
+V=cNM7U4JUA92af_DI5Q331
+!s100 E9z>_TV2g>C<MzZoC?1li2
+R17
+33
+R195
+!i10b 1
+R201
+Z215 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/Reg.vhd|
+Z216 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/Reg.vhd|
+!i113 0
+R22
+R23
+Abehavior
+R12
+R13
+DEx4 work 3 reg 0 22 =cNM7U4JUA92af_DI5Q331
+!i122 43
+l35
+L34 11
+Vo62<:G^Mog3_e:RP9nR>m2
+!s100 dHocUXGB0kBOnJjmSVlk:0
+R17
+33
+R195
+!i10b 1
+R201
+R215
+R216
+!i113 0
+R22
+R23
+Eregister_file
+Z217 w1727397984
+R32
+R12
+R13
+!i122 44
+R2
+Z218 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/register_file.vhd
+Z219 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/register_file.vhd
+l0
+R59
+V_3`JLog6a9fZkMTk:j;Ji2
+!s100 m70nR3lgcf1d[Ol8Y0>]F1
+R17
+33
+R195
+!i10b 1
+R201
+Z220 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/register_file.vhd|
+Z221 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/register_file.vhd|
+!i113 0
+R22
+R23
+Astructural
+R32
+R12
+R13
+DEx4 work 13 register_file 0 22 _3`JLog6a9fZkMTk:j;Ji2
+!i122 44
+l98
+L33 162
+V^QGVWbaH<_[cEhVO^dTkO1
+!s100 JK1DeF=WR5]RSg;0fi6kC3
+R17
+33
+R195
+!i10b 1
+R201
+R220
+R221
+!i113 0
+R22
+R23
+Eregister_nbit
+Z222 w1727652951
+R12
+R13
+!i122 45
+R2
+Z223 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/register_Nbit.vhd
+Z224 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/register_Nbit.vhd
+l0
+R59
+VRf0^ERY?Wza@BAin@NC[S1
+!s100 :aX<oX6h@IbXYMH[kEKMI3
+R17
+33
+R195
+!i10b 1
+R201
+Z225 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/register_Nbit.vhd|
+Z226 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/register_Nbit.vhd|
+!i113 0
+R22
+R23
+Astructural
+R12
+R13
+DEx4 work 13 register_nbit 0 22 Rf0^ERY?Wza@BAin@NC[S1
+!i122 45
+l39
+L29 22
+V<TF^B9ShZleG[8135AflO1
+!s100 ?Dka7NnRik_NHUJ0kJ=jg2
+R17
+33
+R195
+!i10b 1
+R201
+R225
+R226
+!i113 0
+R22
+R23
+Eregld
+R212
+R12
+R13
+!i122 46
+R2
+Z227 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/RegLd.vhd
+Z228 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/RegLd.vhd
+l0
+R16
+V1Sf4jH?e]bez4OI8Xnj4=3
+!s100 eFCNAJnYb8oNMfYL4XmV<1
+R17
+33
+R195
+!i10b 1
+R201
+Z229 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/RegLd.vhd|
+Z230 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/RegLd.vhd|
+!i113 0
+R22
+R23
+Abehavior
+R12
+R13
+DEx4 work 5 regld 0 22 1Sf4jH?e]bez4OI8Xnj4=3
+!i122 46
+l38
+L35 19
+V`H?OF`=3zNFNOZIPAP@2d0
+!s100 9KBklh@44H8];KOTMDXH]0
+R17
+33
+R195
+!i10b 1
+R201
+R229
+R230
+!i113 0
+R22
+R23
+Ereplqb
+Z231 w1729215841
+R32
+R12
+R13
+!i122 47
+R2
+Z232 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/replqb.vhd
+Z233 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/replqb.vhd
+l0
+R165
+VXQZ7D6ENEkj:36U0iD7`V3
+!s100 EclS7J^J6FU[@]`_Nn<6_0
+R17
+33
+R195
+!i10b 1
+R201
+Z234 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/replqb.vhd|
+Z235 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/replqb.vhd|
+!i113 0
+R22
+R23
+Abehavior
+R32
+R12
+R13
+DEx4 work 6 replqb 0 22 XQZ7D6ENEkj:36U0iD7`V3
+!i122 47
+l31
+L28 23
+VDo3C=DR<WU3X_1j4;[7jh1
+!s100 ?AIZW2T0f[nhLUfLnWe2m0
+R17
+33
+R195
+!i10b 1
+R201
+R234
+R235
+!i113 0
+R22
+R23
+Esign_extender
+Z236 w1727554875
+R32
+R12
+R13
+!i122 48
+R2
+Z237 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/sign_extender.vhd
+Z238 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/sign_extender.vhd
+l0
+R165
+Vo>3R]XZganLWPAW?OjcJC2
+!s100 nckBOcK0`6:TR:_RU?7@K1
+R17
+33
+R195
+!i10b 1
+R201
+Z239 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/sign_extender.vhd|
+Z240 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/sign_extender.vhd|
+!i113 0
+R22
+R23
+Abehavioral
+R32
+R12
+R13
+DEx4 work 13 sign_extender 0 22 o>3R]XZganLWPAW?OjcJC2
+!i122 48
+l31
+L29 18
+V[[:iH2gn4XjYZDC::Q`b80
+!s100 5Gi[51_F0N@VWBBmeiY0R1
+R17
+33
+R195
+!i10b 1
+R201
+R239
+R240
+!i113 0
+R22
+R23
+Eslt
+Z241 w1729053051
+R12
+R13
+!i122 49
+R2
+Z242 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/slt.vhd
+Z243 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/slt.vhd
+l0
+R52
+Vo:N:f=E4]iG@MXI8on[dc0
+!s100 k3S?>hoQKN8cQn=BM5<mV3
+R17
+33
+R195
+!i10b 1
+R201
+Z244 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/slt.vhd|
+Z245 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/slt.vhd|
+!i113 0
+R22
+R23
+Adataflow
+R12
+R13
+DEx4 work 3 slt 0 22 o:N:f=E4]iG@MXI8on[dc0
+!i122 49
+l30
+R55
+VAld5V;b>Vf_0:QKX9P:`^0
+!s100 iWc;CA58gfOz^SBLnc1Z01
+R17
+33
+R195
+!i10b 1
+R201
+R244
+R245
+!i113 0
+R22
+R23
+Etb_addersubtractor_n
+Z246 w1728927281
+R12
+R13
+!i122 50
+R2
+Z247 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_addersubtract_N.vhd
+Z248 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_addersubtract_N.vhd
+l0
+Z249 L16 1
+V@L<HA?iTNE`:7a;UODEHX1
+!s100 =nb_Vj4LIQ0DI0Q5]]KF82
+R17
+33
+R195
+!i10b 1
+R201
+Z250 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_addersubtract_N.vhd|
+Z251 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_addersubtract_N.vhd|
+!i113 0
+R22
+R23
+Abehavior
+R12
+R13
+DEx4 work 20 tb_addersubtractor_n 0 22 @L<HA?iTNE`:7a;UODEHX1
+!i122 50
+l38
+L19 49
+VogFdkzXCe^97T2f^Qi@Yn0
+!s100 YNASfONH2JS>N]l2E]Via3
+R17
+33
+R195
+!i10b 1
+R201
+R250
+R251
+!i113 0
+R22
+R23
+Etb_alu
+Z252 w1729644929
+R12
+R13
+!i122 51
+R2
+Z253 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_ALU.vhd
+Z254 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_ALU.vhd
+l0
+R249
+VD<5MaU:EGf3_cHzS`D:c70
+!s100 Ub4Y<nUafQoQN4`K1IDK40
+R17
+33
+R195
+!i10b 1
+R201
+Z255 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_ALU.vhd|
+Z256 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_ALU.vhd|
+!i113 0
+R22
+R23
+Abehavior
+R12
+R13
+DEx4 work 6 tb_alu 0 22 D<5MaU:EGf3_cHzS`D:c70
+!i122 51
+l40
+L19 201
+VIUKMGhkR0@aUFkYDIo8jh3
+!s100 _7hGZ4cGkmncQ5Leef2jk3
+R17
+33
+R195
+!i10b 1
+R201
+R255
+R256
+!i113 0
+R22
+R23
+Etb_barrel_shifter
+w1729046620
+R12
+R13
+!i122 52
+R2
+8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_barrel_shifter.vhd
+F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_barrel_shifter.vhd
+l0
+R249
+VCaM9CYEdN?Jl_dQ]F;ge43
+!s100 2UF@Sn]Rm1QS:0zaFoX890
+R17
+33
+R195
+!i10b 1
+R201
+!s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_barrel_shifter.vhd|
+!s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_barrel_shifter.vhd|
+!i113 0
+R22
+R23
+Etb_control_unit
+R62
+R32
+Z257 DPx4 ieee 16 std_logic_textio 0 22 8]8<fKiYoHe;_IDO3kmNH2
+R12
+R13
+!i122 53
+R2
+Z258 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_control_unit.vhd
+Z259 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_control_unit.vhd
+l0
+R249
+VaRd:hm<5SUK_AGHhM5zP03
+!s100 NV[B6:_V>9Fa:nOPH=G1P0
+R17
+33
+R195
+!i10b 1
+R201
+Z260 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_control_unit.vhd|
+Z261 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_control_unit.vhd|
+!i113 0
+R22
+R23
+Abehavior
+R32
+R257
+R12
+R13
+DEx4 work 15 tb_control_unit 0 22 aRd:hm<5SUK_AGHhM5zP03
+!i122 53
+l39
+L20 195
+V:D:LXdMoLPPf8aimZ19;50
+!s100 Sf]:BF3aj8Rg<O>JYkI]c3
+R17
+33
+R195
+!i10b 1
+R201
+R260
+R261
+!i113 0
+R22
+R23
+Etb_datapath_first
+Z262 w1727628998
+R12
+R13
+!i122 64
+R2
+Z263 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_datapath_first.vhd
+Z264 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_datapath_first.vhd
+l0
+R249
+Vo2mSmkcZad8n8BochG9QR0
+!s100 [O>N^YFOWCAjEfA<>UkkW2
+R17
+33
+R154
+!i10b 1
+R155
+Z265 !s90 -reportprogress|30|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_datapath_first.vhd|
+Z266 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_datapath_first.vhd|
+!i113 0
+R22
+R23
+Abehavior
+R12
+R13
+DEx4 work 17 tb_datapath_first 0 22 o2mSmkcZad8n8BochG9QR0
+!i122 64
+l48
+L20 537
+V@YMWO;cj3jO5X>>RQ@k252
+!s100 FY3do=NCWV@z>`E8ee_kA1
+R17
+33
+R154
+!i10b 1
+R155
+R265
+R266
+!i113 0
+R22
+R23
+Etb_datapath_newalu
+Z267 w1729697626
+R12
+R13
+!i122 63
+R2
+Z268 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_datapath_NewALU.vhd
+Z269 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_datapath_NewALU.vhd
+l0
+R249
+V^Rg24Kd^8@:H=gFhg>]TD1
+!s100 HD][na_z7ehzJhUFS97Dz3
+R17
+33
+R154
+!i10b 1
+R155
+Z270 !s90 -reportprogress|30|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_datapath_NewALU.vhd|
+Z271 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_datapath_NewALU.vhd|
+!i113 0
+R22
+R23
+Abehavior
+R12
+R13
+DEx4 work 18 tb_datapath_newalu 0 22 ^Rg24Kd^8@:H=gFhg>]TD1
+!i122 63
+l55
+L20 780
+VFaz<6e;Jg4WKBMUFTDH0i2
+!s100 G;3[iXINN3Em;]Pe4K:Q_2
+R17
+33
+R154
+!i10b 1
+R155
+R270
+R271
+!i113 0
+R22
+R23
+Etb_datapath_second
+Z272 w1727660750
+R12
+R13
+!i122 62
+R2
+Z273 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_datapath_second.vhd
+Z274 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_datapath_second.vhd
+l0
+R249
+V6e:zIYPHnDAZ;f8a>XkJF2
+!s100 hHk=A;g^VGGbz_7e]Gh==0
+R17
+33
+R195
+!i10b 1
+R201
+Z275 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_datapath_second.vhd|
+Z276 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_datapath_second.vhd|
+!i113 0
+R22
+R23
+Abehavior
+R12
+R13
+DEx4 work 18 tb_datapath_second 0 22 6e:zIYPHnDAZ;f8a>XkJF2
+!i122 62
+l51
+L20 592
+VgiTa<3ePSPJ_ze8Q;CTAm1
+!s100 Z87D^6=Q;;R<^EozEmJ3Z0
+R17
+33
+R195
+!i10b 1
+R201
+R275
+R276
+!i113 0
+R22
+R23
 Etb_fetch_logic
-Z63 w1729108890
+Z277 w1729108890
 R12
 R13
 !i122 12
-R24
-Z64 8/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_pc_fetch_logic.vhd
-Z65 F/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_pc_fetch_logic.vhd
+R98
+Z278 8/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_pc_fetch_logic.vhd
+Z279 F/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_pc_fetch_logic.vhd
 l0
-R27
+R65
 VQnGFID4eUW@Ya`Nhn]Z]X3
 !s100 _dMRHKT2S<:Qo6?k5JAT=0
-R16
+R17
 33
-Z66 !s110 1729109561
+Z280 !s110 1729109561
 !i10b 1
-Z67 !s108 1729109561.000000
-Z68 !s90 -reportprogress|300|-work|work|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_pc_fetch_logic.vhd|
-Z69 !s107 /home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_pc_fetch_logic.vhd|
+Z281 !s108 1729109561.000000
+Z282 !s90 -reportprogress|300|-work|work|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_pc_fetch_logic.vhd|
+Z283 !s107 /home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_pc_fetch_logic.vhd|
 !i113 0
-R21
-R39
+R22
+R23
 Abehavior
 R12
 R13
 DEx4 work 14 tb_fetch_logic 0 22 QnGFID4eUW@Ya`Nhn]Z]X3
 !i122 12
 l34
-L16 70
+Z284 L16 70
 V`2BUY[>TzQSU>bdZ]C5M;3
 !s100 KoSR^L=G]11;O3mEGm8L43
-R16
+R17
 33
-R66
+R280
 !i10b 1
-R67
-R68
-R69
+R281
+R282
+R283
 !i113 0
-R21
-R39
+R22
+R23
+Etb_pc_fetch_logic
+R62
+R12
+R13
+!i122 61
+R2
+Z285 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_pc_fetch_logic.vhd
+Z286 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_pc_fetch_logic.vhd
+l0
+R65
+V]0j7@C^f1ScLLeNg?KeGV3
+!s100 kS88N>SK`FSKm<O69gV5P2
+R17
+33
+R195
+!i10b 1
+R201
+Z287 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_pc_fetch_logic.vhd|
+Z288 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_pc_fetch_logic.vhd|
+!i113 0
+R22
+R23
+Abehavior
+R12
+R13
+DEx4 work 17 tb_pc_fetch_logic 0 22 ]0j7@C^f1ScLLeNg?KeGV3
+!i122 61
+l34
+R284
+V^4DdZ6A?HYN6LTO8YNe^N2
+!s100 HPOlIRjnK4EMdf^_clSUX3
+R17
+33
+R195
+!i10b 1
+R201
+R287
+R288
+!i113 0
+R22
+R23
+Etb_replqb
+Z289 w1729215663
+R12
+R13
+!i122 59
+R2
+Z290 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_replqb.vhd
+Z291 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_replqb.vhd
+l0
+R249
+V728^ca90gNaQUTz]feUa`0
+!s100 jFb207N3HXSQeP?W]ki1O0
+R17
+33
+R195
+!i10b 1
+R201
+Z292 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_replqb.vhd|
+Z293 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_replqb.vhd|
+!i113 0
+R22
+R23
+Abehavior
+R12
+R13
+DEx4 work 9 tb_replqb 0 22 728^ca90gNaQUTz]feUa`0
+!i122 59
+l31
+L19 61
+VUADbc9_YNMlUK7JkS][VB0
+!s100 bRXH5@>FHiHDID_[SHcm03
+R17
+33
+R195
+!i10b 1
+R201
+R292
+R293
+!i113 0
+R22
+R23
+Etb_slt
+Z294 w1729221098
+R12
+R13
+!i122 58
+R2
+Z295 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_slt.vhd
+Z296 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_slt.vhd
+l0
+R249
+VbcO<AYHIn3@McG0>ODDdA0
+!s100 mP`^GKo;FkIlFk0Ce;VGK2
+R17
+33
+R195
+!i10b 1
+R201
+Z297 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_slt.vhd|
+Z298 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_slt.vhd|
+!i113 0
+R22
+R23
+Abehavior
+R12
+R13
+DEx4 work 6 tb_slt 0 22 bcO<AYHIn3@McG0>ODDdA0
+!i122 58
+l32
+L19 54
+V>dak3d`XC3Aj:NM`LkHkR2
+!s100 N83;QNMm1:kjiBHS?Z>cQ1
+R17
+33
+R195
+!i10b 1
+R201
+R297
+R298
+!i113 0
+R22
+R23
+Etb_zero_flagcheck
+Z299 w1729222114
+R12
+R13
+!i122 57
+R2
+Z300 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_zero_FlagCheck.vhd
+Z301 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_zero_FlagCheck.vhd
+l0
+R249
+V;]heK7L?k^HPWXeL<nAez3
+!s100 AaEjmO>jT32>c8Vgefjhl3
+R17
+33
+R195
+!i10b 1
+R201
+Z302 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_zero_FlagCheck.vhd|
+Z303 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/tb_zero_FlagCheck.vhd|
+!i113 0
+R22
+R23
+Abehavior
+R12
+R13
+DEx4 work 17 tb_zero_flagcheck 0 22 ;]heK7L?k^HPWXeL<nAez3
+!i122 57
+l31
+L19 38
+VamRlgaYl1>M`J@6fB8c;T2
+!s100 ;lD_]c4dC1ZHT?Kg7VVnN0
+R17
+33
+R195
+!i10b 1
+R201
+R302
+R303
+!i113 0
+R22
+R23
+Exorg2
+R42
+R12
+R13
+!i122 56
+R2
+Z304 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/xorg2.vhd
+Z305 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/xorg2.vhd
+l0
+R45
+VV6C:miP5l_oAXXFV_WP4`3
+!s100 [hI[mXFH4_j16U;>U1Lfn2
+R17
+33
+R195
+!i10b 1
+R201
+Z306 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/xorg2.vhd|
+Z307 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/xorg2.vhd|
+!i113 0
+R22
+R23
+Adataflow
+R12
+R13
+DEx4 work 5 xorg2 0 22 V6C:miP5l_oAXXFV_WP4`3
+!i122 56
+l32
+R48
+V0<8Ik`hGa2ooIj9K`Y3Wc0
+!s100 Z6[FAPS4fBLB`F?OO<AY72
+R17
+33
+R195
+!i10b 1
+R201
+R306
+R307
+!i113 0
+R22
+R23
+Exorg2_n
+Z308 w1729052554
+R12
+R13
+!i122 55
+R2
+Z309 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/xorg2_N.vhd
+Z310 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/xorg2_N.vhd
+l0
+R52
+VhAzZkQ3eCGOZJQkfidId[0
+!s100 iz@HMlzG3ChkFFZeR<Hdg3
+R17
+33
+R195
+!i10b 1
+R201
+Z311 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/xorg2_N.vhd|
+Z312 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/xorg2_N.vhd|
+!i113 0
+R22
+R23
+Adataflow
+R12
+R13
+DEx4 work 7 xorg2_n 0 22 hAzZkQ3eCGOZJQkfidId[0
+!i122 55
+l30
+R55
+VA[L^zIf[T;J80N8RFNHB70
+!s100 a;j_`dcJJf]j^MjE7VdcV3
+R17
+33
+R195
+!i10b 1
+R201
+R311
+R312
+!i113 0
+R22
+R23
+Ezero_flagcheck
+Z313 w1729212629
+R12
+R13
+!i122 54
+R2
+Z314 8/home/kadenb/cpre381/project1/381Project1/ProjectFiles/zero_FlagCheck.vhd
+Z315 F/home/kadenb/cpre381/project1/381Project1/ProjectFiles/zero_FlagCheck.vhd
+l0
+R59
+Vh1=ZM6f9_j2UAZM[=3AKR0
+!s100 z03A<j8iWNdbihJ_E<Q9O0
+R17
+33
+R195
+!i10b 1
+R201
+Z316 !s90 -reportprogress|300|-work|work|/home/kadenb/cpre381/project1/381Project1/ProjectFiles/zero_FlagCheck.vhd|
+Z317 !s107 /home/kadenb/cpre381/project1/381Project1/ProjectFiles/zero_FlagCheck.vhd|
+!i113 0
+R22
+R23
+Abehavior
+R12
+R13
+DEx4 work 14 zero_flagcheck 0 22 h1=ZM6f9_j2UAZM[=3AKR0
+!i122 54
+l29
+L26 16
+V8?6:^EiJXNj_EfX]3[b7A0
+!s100 HhT5=nKzT8h=7E8hPaU9W2
+R17
+33
+R195
+!i10b 1
+R201
+R316
+R317
+!i113 0
+R22
+R23
