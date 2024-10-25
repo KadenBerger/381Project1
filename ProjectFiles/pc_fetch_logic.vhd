@@ -1,49 +1,54 @@
-
-
+-------------------------------------------------------------------------
 -- pc_fetch_logic.vhd
 -------------------------------------------------------------------------
--- DESCRIPTION: This file contains an implementation of a positive edge 
--- d-flip-flop with parallel access and reset
+-- DESCRIPTION: This file contains an implementation of a 32-bit positive edge 
+-- d-flip-flop with reset, it then stores the PC value.
 -------------------------------------------------------------------------
 
-library IEEE;
-use IEEE.std_logic_1164.all;
+library ieee;
+use ieee.std_logic_1164.all;
 
--- entity
+-- Entity Declaration
+
 entity pc_fetch_logic is
- -- generic(N : integer := 32); -- Generic of type integer for input/output data width. Default value is 32.
+ 
   port(i_CLK        : in std_logic;     -- Clock input
        i_RST        : in std_logic;     -- Reset input
-      -- i_WE         : in std_logic;     -- Write enable input
-       i_D          : in std_logic_vector(31 downto 0);     -- Data value input
-       o_Q          : out std_logic_vector(31 downto 0));   -- Data value output
+       i_D          : in std_logic_vector(31 downto 0);     -- input the data value 
+       o_Q          : out std_logic_vector(31 downto 0));   -- output the data value 
+
 end pc_fetch_logic;
 
--- architecture
+-- Architecture of the PC fetch logic
+
 architecture structural of pc_fetch_logic is
 
-  component pc_fetch_logic_dffg is
-  port(i_CLK        : in std_logic;     -- Clock input
-       i_RST        : in std_logic;     -- Reset input
-       i_RST_data   : in std_logic;     -- Write enable input
-       i_D          : in std_logic;     -- Data value input
-       o_Q          : out std_logic);   -- Data value output
-  end component;
+component pc_fetch_logic_dffg is
 
-  signal s_RST_data : std_logic_vector(31 downto 0) := X"00400000";
+port(
+i_CLK        : in std_logic;     -- Clock input
+i_RST        : in std_logic;     -- Reset input
+i_RST_data   : in std_logic;     -- Write enable input
+i_D          : in std_logic;     -- Data value input
+o_Q          : out std_logic);   -- Data value output
+
+end component;
+
+signal s_RST_data : std_logic_vector(31 downto 0) := X"00400000"; --Internal signal
 
 begin
 
-  -- Instantiate N dff instances.
-  G_NBit_DFFG: for i in 0 to 31 generate
-    ONESCOMPI: pc_fetch_logic_dffg port map(
+  -- It has 32 instances of the dff
+  g_Nbit_dffg: for i in 0 to 31 generate
+    onescompi: pc_fetch_logic_dffg 
 
-i_CLK      => i_CLK,  -- every dff has the same clock
-i_RST	   => i_RST,  -- parallel rst
-i_RST_data => s_RST_data(i),   -- parallel write enable
-i_D	   => i_D(i), -- N bit long dff reg input
-o_Q        => o_Q(i));-- N bit long dff reg output
+port map(
+i_CLK      => i_CLK,  -- all dff share the same clock
+i_RST	   => i_RST,  -- all dff share the same reset
+i_RST_data => s_RST_data(i),   -- reset data for every bit
+i_D	   => i_D(i), -- input PC value
+o_Q        => o_Q(i));-- output PC value
 
-  end generate G_NBit_DFFG;
+end generate g_Nbit_dffg;
   
 end structural;
