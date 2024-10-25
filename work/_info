@@ -1,13 +1,23 @@
 m255
 K4
 z2
-Z0 !s12c _opt
+Z0 !s12c _opt1
 Z1 !s99 nomlopt
-R0
+Z2 !s12c _opt
+R1
+!s12c _opt2
 R1
 R0
 R1
 R0
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
 R1
 !s11e MIXED_VERSIONS
 13
@@ -16,355 +26,384 @@ R1
 !i10e 25
 !i10f 100
 cModel Technology
-Z2 d/home/jjmetzen/CPRE381/381Project1/381Project1
+Z3 d/home/jjmetzen/CPRE381/381Project1/381Project1
 T_opt
-!s110 1729696818
-V>OBNWaCR4Zm`^?k8E;LAS0
-04 14 8 work tb_fetch_logic behavior 1
-=1-7486e2289d02-67191432-ba2-236c
+!s110 1729699409
+VO40OQMBW27P@Nf<nnNf[S2
+04 15 8 work tb_control_unit behavior 1
+=1-7486e2289d02-67191e50-dbab1-300d
 R1
-!s12f OEM100
-!s12b OEM100
-!s124 OEM100
-!s135 nogc
-o-quiet -auto_acc_if_foreign -work work +acc
-tCvgOpt 0
+Z4 !s12f OEM100
+Z5 !s12b OEM100
+Z6 !s124 OEM100
+Z7 !s135 nogc
+Z8 o-quiet -auto_acc_if_foreign -work work +acc
+Z9 tCvgOpt 0
 n@_opt
-OL;O;2024.2;79
-R2
+Z10 OL;O;2024.2;79
+R3
+T_opt1
+!s110 1729699735
+VJh^EObzNfk=cMO3Q?SlX_0
+04 17 8 work tb_pc_fetch_logic behavior 1
+=1-7486e2289d02-67191f97-b0683-31f9
+R1
+R4
+R5
+R6
+R7
+R8
+R9
+n@_opt1
+R10
+T_opt2
+!s110 1729699269
+V8=0=L@C46WNXlaAOllL`M2
+04 12 8 work control_unit dataflow 1
+=1-7486e2289d02-67191dc5-86dfc-2f09
+R1
+R4
+R5
+R6
+R7
+o-quiet -auto_acc_if_foreign -work work
+R9
+n@_opt2
+R10
+R3
 Ebarrel_shifter
-Z3 w1728485656
-Z4 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 19
-R2
-Z7 8/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/barrel_shifter.vhd
-Z8 F/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/barrel_shifter.vhd
+Z11 w1728485656
+Z12 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z13 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z14 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 28
+R3
+Z15 8/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/barrel_shifter.vhd
+Z16 F/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/barrel_shifter.vhd
 l0
 L20 1
 VS^Bg8014fn9<Ab5<=aLc:3
 !s100 ekoOLP<7?<Fl5LA6O69d;1
-Z9 OL;C;2024.2;79
+Z17 OL;C;2024.2;79
 33
-Z10 !s110 1729696665
+Z18 !s110 1729699253
 !i10b 1
-Z11 !s108 1729696665.000000
-Z12 !s90 -reportprogress|300|-work|work|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/mem.vhd|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/control_unit.vhd|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/barrel_shifter.vhd|
-Z13 !s107 /home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/barrel_shifter.vhd|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/control_unit.vhd|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/mem.vhd|
+Z19 !s108 1729699253.000000
+Z20 !s90 -reportprogress|300|-work|work|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_control_unit.vhd|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/barrel_shifter.vhd|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/control_unit.vhd|
+Z21 !s107 /home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/control_unit.vhd|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/barrel_shifter.vhd|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_control_unit.vhd|
 !i113 0
-Z14 o-work work
-Z15 tExplicit 1 NoCoverage 1 CvgOpt 0
+Z22 o-work work
+Z23 tExplicit 1 NoCoverage 1 CvgOpt 0
 Abehavior
-R4
-R5
-R6
+R12
+R13
+R14
 DEx4 work 14 barrel_shifter 0 22 S^Bg8014fn9<Ab5<=aLc:3
-!i122 19
+!i122 28
 l32
 L28 16
 VFB8L7>9o=R_ODP_0M]E8b3
 !s100 @JXzdfj^?D^]J05n[X]kJ1
-R9
+R17
 33
-R10
+R18
 !i10b 1
-R11
-R12
-R13
+R19
+R20
+R21
 !i113 0
-R14
-R15
+R22
+R23
 Econtrol_unit
-Z16 w1729091219
-R5
-R6
-!i122 19
-R2
-Z17 8/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/control_unit.vhd
-Z18 F/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/control_unit.vhd
-l0
-Z19 L12 1
-V?9d<L^nERHcdlh<@Kl7P^1
-!s100 1I>HgaOjYoA2h^KT;T<Gz3
-R9
-33
-R10
-!i10b 1
-R11
-R12
+Z24 w1729698854
 R13
-!i113 0
 R14
-R15
-Adataflow
-R5
-R6
-DEx4 work 12 control_unit 0 22 ?9d<L^nERHcdlh<@Kl7P^1
-!i122 19
-l23
-L21 43
-VH?b?BOn]SZ7jZz@F:6<H`1
-!s100 UPl17db3`URWZg>O;Gl:T1
-R9
-33
-R10
-!i10b 1
-R11
-R12
-R13
-!i113 0
-R14
-R15
-Emem
+!i122 29
 R3
-R4
-R5
-R6
-!i122 19
-R2
-Z20 8/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/mem.vhd
-Z21 F/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/mem.vhd
+Z25 8/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/control_unit.vhd
+Z26 F/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/control_unit.vhd
+l0
+Z27 L12 1
+V2WW01JdkWC_S>4TT44dBC0
+!s100 A6N<DQfSkAea`kCYbn>3B2
+R17
+33
+Z28 !s110 1729699399
+!i10b 1
+Z29 !s108 1729699399.000000
+Z30 !s90 -reportprogress|300|-work|work|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/control_unit.vhd|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_control_unit.vhd|
+Z31 !s107 /home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_control_unit.vhd|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/control_unit.vhd|
+!i113 0
+R22
+R23
+Adataflow
+R13
+R14
+DEx4 work 12 control_unit 0 22 2WW01JdkWC_S>4TT44dBC0
+!i122 29
+l24
+L22 43
+V;[[^Ne=9B_QcOMGKHPHOi2
+!s100 =C4XPk58doh@NOZ[LlLoj2
+R17
+33
+R28
+!i10b 1
+R29
+R30
+R31
+!i113 0
+R22
+R23
+Emem
+R11
+R12
+R13
+R14
+!i122 25
+R3
+Z32 8/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/mem.vhd
+Z33 F/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/mem.vhd
 l0
 L8 1
 VQ_Y953^@mg4h;HoXAPe2d2
 !s100 fRlcaiTJZJ1H;nZh;8=LI3
-R9
+R17
 33
-R10
+Z34 !s110 1729698792
 !i10b 1
-R11
+Z35 !s108 1729698792.000000
+Z36 !s90 -reportprogress|300|-work|work|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/barrel_shifter.vhd|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/control_unit.vhd|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/mem.vhd|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic.vhd|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic_dffg.vhd|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_pc_fetch_logic.vhd|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_control_unit.vhd|
+Z37 !s107 /home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_control_unit.vhd|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_pc_fetch_logic.vhd|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic_dffg.vhd|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic.vhd|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/mem.vhd|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/control_unit.vhd|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/barrel_shifter.vhd|
+!i113 0
+R22
+R23
+Artl
 R12
 R13
-!i113 0
 R14
-R15
-Artl
-R4
-R5
-R6
 DEx4 work 3 mem 0 22 Q_Y953^@mg4h;HoXAPe2d2
-!i122 19
+!i122 25
 l37
 L27 24
 VcdMDH_i8fEBbejOT7K`iC2
 !s100 OI8_3><BhDkT3l3n8`OXd3
-R9
+R17
 33
-R10
+R34
 !i10b 1
-R11
-R12
-R13
+R35
+R36
+R37
 !i113 0
-R14
-R15
+R22
+R23
 Epc_fetch_logic
-Z22 w1729263543
-R5
-R6
-!i122 18
-R2
-Z23 8/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic.vhd
-Z24 F/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic.vhd
+Z38 w1729263543
+R13
+R14
+!i122 25
+R3
+Z39 8/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic.vhd
+Z40 F/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic.vhd
 l0
 L13 1
 Vz=2GS_JcibM7YXcMD>]VP3
 !s100 M;9QHGXTjeXgOc<Y1=Ble1
-R9
+R17
 33
-Z25 !s110 1729696661
+R34
 !i10b 1
-Z26 !s108 1729696661.000000
-Z27 !s90 -reportprogress|300|-work|work|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic.vhd|
-Z28 !s107 /home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic.vhd|
+R35
+R36
+R37
 !i113 0
-R14
-R15
+R22
+R23
 Astructural
-R5
-R6
+R13
+R14
 DEx4 work 14 pc_fetch_logic 0 22 z=2GS_JcibM7YXcMD>]VP3
-!i122 18
+!i122 25
 l35
 L23 27
 Va^WfK40c8EXR@i]7NHofb2
 !s100 DJcQY`j_^C3WTBEEOfh:L1
-R9
+R17
 33
-R25
+R34
 !i10b 1
-R26
-R27
-R28
+R35
+R36
+R37
 !i113 0
-R14
-R15
+R22
+R23
 Epc_fetch_logic_dffg
-Z29 w1729263600
-R5
-R6
-!i122 16
-R2
-Z30 8/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic_dffg.vhd
-Z31 F/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic_dffg.vhd
+Z41 w1729263600
+R13
+R14
+!i122 25
+R3
+Z42 8/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic_dffg.vhd
+Z43 F/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic_dffg.vhd
 l0
-R19
+R27
 V<Yz?bba16^VkCD8=akEQ23
 !s100 dm6>;f9kkP__<SUTJzmf<1
-R9
+R17
 33
-Z32 !s110 1729696658
+R34
 !i10b 1
-Z33 !s108 1729696658.000000
-Z34 !s90 -reportprogress|300|-work|work|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic_dffg.vhd|
-Z35 !s107 /home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/pc_fetch_logic_dffg.vhd|
+R35
+R36
+R37
 !i113 0
-R14
-R15
+R22
+R23
 Amixed
-R5
-R6
+R13
+R14
 DEx4 work 19 pc_fetch_logic_dffg 0 22 <Yz?bba16^VkCD8=akEQ23
-!i122 16
+!i122 25
 l26
 L22 22
 V_SVUY0Snjob;ghb1hL3F03
 !s100 bef32Q<PCLkaeIK_5jcbn0
-R9
+R17
 33
-R32
-!i10b 1
-R33
 R34
+!i10b 1
 R35
+R36
+R37
 !i113 0
-R14
-R15
+R22
+R23
 Etb_control_unit
-Z36 w1729696488
-R4
-Z37 DPx4 ieee 16 std_logic_textio 0 22 8]8<fKiYoHe;_IDO3kmNH2
-R5
-R6
-!i122 17
-R2
-Z38 8/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_control_unit.vhd
-Z39 F/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_control_unit.vhd
+Z44 w1729699180
+R12
+Z45 DPx4 ieee 16 std_logic_textio 0 22 8]8<fKiYoHe;_IDO3kmNH2
+R13
+R14
+!i122 29
+R3
+Z46 8/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_control_unit.vhd
+Z47 F/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_control_unit.vhd
 l0
 L16 1
 VaRd:hm<5SUK_AGHhM5zP03
 !s100 NV[B6:_V>9Fa:nOPH=G1P0
-R9
+R17
 33
-Z40 !s110 1729696659
+R28
 !i10b 1
-Z41 !s108 1729696659.000000
-Z42 !s90 -reportprogress|300|-work|work|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_control_unit.vhd|
-Z43 !s107 /home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_control_unit.vhd|
+R29
+R30
+R31
 !i113 0
-R14
-R15
+R22
+R23
 Abehavior
-R4
-R37
-R5
-R6
-DEx4 work 15 tb_control_unit 0 22 aRd:hm<5SUK_AGHhM5zP03
-!i122 17
-l39
-L20 195
-V:D:LXdMoLPPf8aimZ19;50
-!s100 Sf]:BF3aj8Rg<O>JYkI]c3
-R9
-33
-R40
-!i10b 1
-R41
-R42
-R43
-!i113 0
+R12
+R45
+R13
 R14
-R15
+DEx4 work 15 tb_control_unit 0 22 aRd:hm<5SUK_AGHhM5zP03
+!i122 29
+l38
+L20 194
+Vg@==Qo:IO9<nDe`SUbSBX2
+!s100 W;jbooz7E5YSP==V[hD942
+R17
+33
+R28
+!i10b 1
+R29
+R30
+R31
+!i113 0
+R22
+R23
 Etb_fetch_logic
-Z44 w1729696803
-R5
-R6
+Z48 w1729696803
+R13
+R14
 !i122 23
-R2
-Z45 8/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_pc_fetch_logic.vhd
-Z46 F/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_pc_fetch_logic.vhd
+R3
+Z49 8/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_pc_fetch_logic.vhd
+Z50 F/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_pc_fetch_logic.vhd
 l0
-R19
+R27
 VQnGFID4eUW@Ya`Nhn]Z]X3
 !s100 _dMRHKT2S<:Qo6?k5JAT=0
-R9
+R17
 33
-Z47 !s110 1729696811
+Z51 !s110 1729696811
 !i10b 1
-Z48 !s108 1729696811.000000
-Z49 !s90 -reportprogress|300|-work|work|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_pc_fetch_logic.vhd|
-Z50 !s107 /home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_pc_fetch_logic.vhd|
+Z52 !s108 1729696811.000000
+Z53 !s90 -reportprogress|300|-work|work|/home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_pc_fetch_logic.vhd|
+Z54 !s107 /home/jjmetzen/CPRE381/381Project1/381Project1/ProjectFiles/tb_pc_fetch_logic.vhd|
 !i113 0
-R14
-R15
+R22
+R23
 Abehavior
-R5
-R6
+R13
+R14
 DEx4 work 14 tb_fetch_logic 0 22 QnGFID4eUW@Ya`Nhn]Z]X3
 !i122 23
 l34
-Z51 L16 70
+Z55 L16 70
 V_CbNleL>2EM9k>?N4UdAj3
 !s100 KS8IU;C[kSYc957X6`>f50
-R9
+R17
 33
-R47
+R51
 !i10b 1
-R48
+R52
+R53
+R54
+!i113 0
+R22
+R23
+Etb_pc_fetch_logic
+Z56 w1729697296
+R13
+R14
+!i122 25
+R3
 R49
 R50
-!i113 0
-R14
-R15
-Etb_pc_fetch_logic
-Z52 w1729697296
-R5
-R6
-!i122 24
-R2
-R45
-R46
 l0
-R19
+R27
 V]0j7@C^f1ScLLeNg?KeGV3
 !s100 kS88N>SK`FSKm<O69gV5P2
-R9
+R17
 33
-Z53 !s110 1729697301
+R34
 !i10b 1
-Z54 !s108 1729697301.000000
-R49
-R50
+R35
+R36
+R37
 !i113 0
-R14
-R15
+R22
+R23
 Abehavior
-R5
-R6
+R13
+R14
 DEx4 work 17 tb_pc_fetch_logic 0 22 ]0j7@C^f1ScLLeNg?KeGV3
-!i122 24
+!i122 25
 l34
-R51
+R55
 V^4DdZ6A?HYN6LTO8YNe^N2
 !s100 HPOlIRjnK4EMdf^_clSUX3
-R9
+R17
 33
-R53
+R34
 !i10b 1
-R54
-R49
-R50
+R35
+R36
+R37
 !i113 0
-R14
-R15
+R22
+R23

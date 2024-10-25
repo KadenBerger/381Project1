@@ -5,7 +5,7 @@
 3
 8 behavior
 2
-15 tb_control_unit
+17 tb_pc_fetch_logic
 4
 9 gCLK_HPER
 ]
