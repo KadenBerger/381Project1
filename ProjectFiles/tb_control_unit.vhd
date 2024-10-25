@@ -2,7 +2,7 @@
 -- tb_control_unit.vhd
 -------------------------------------------------------------------------
 -- DESCRIPTION: This file contains a testbench for the MIPS control unit
--- 
+-- this will be testing different opcodes and function values.
 -------------------------------------------------------------------------
 
 
@@ -14,201 +14,230 @@ library std;
 use std.textio.all;             -- For basic I/O
 
 entity tb_control_unit is
-  generic(gCLK_HPER   : time := 50 ns);
+  generic(gCLK_HPER   : time := 50 ns); --half period clock
 end tb_control_unit;
 
 architecture behavior of tb_control_unit is
   
-  constant cCLK_PER  : time := gCLK_HPER * 2;
+constant cCLK_PER  : time := gCLK_HPER * 2; --full period clock
 
- component control_unit
-	port(i_opcode  	  	: in std_logic_vector(5 downto 0);
-	     i_funct	  	: in std_logic_vector(5 downto 0);
-	     o_Ctrl_Unt		: out std_logic_vector(14 downto 0));
-  end component;
+component control_unit
 
-  -- Temporary signals to connect to the dff component.
-  signal s_CLK : std_logic := '0';
+	port(i_opcode  	  	: in std_logic_vector(5 downto 0); --input
+	     i_funct	  	: in std_logic_vector(5 downto 0); --input
+	     o_ctrl_unit	: out std_logic_vector(14 downto 0)); --output
+end component;
 
-  signal s_opcode    : std_logic_vector(5 downto 0) := (others => '0');
-  signal s_funct     : std_logic_vector(5 downto 0) := (others => '0');
-  signal s_Ctrl_Unt  : std_logic_vector(14 downto 0);
-  signal expected_out: std_logic_vector(14 downto 0):= (others => '0');
-
+-- Temporary signals to connect to the dff component.
+signal s_CLK : std_logic := '0';
+signal s_opcode    : std_logic_vector(5 downto 0) := (others => '0'); --opcode input
+signal s_funct     : std_logic_vector(5 downto 0) := (others => '0'); --funct input
+signal s_ctrl_unit  : std_logic_vector(14 downto 0); -- control signal output
+signal expected_output: std_logic_vector(14 downto 0):= (others => '0'); -- expected output
 
 begin
 
-  DUT: control_unit 
-  port map(i_opcode => s_opcode,
+DUT: control_unit -- the DUT
+port map(i_opcode => s_opcode,
            i_funct => s_funct,
-           o_Ctrl_Unt => s_Ctrl_Unt);
+           o_ctrl_unit => s_ctrl_unit);
 
-  -- This process sets the clock value (low for gCLK_HPER, then high
-  -- for gCLK_HPER). Absent a "wait" command, processes restart 
-  -- at the beginning once they have reached the final statement.
+P_CLK: process --Alternate the clock signal
 
-  P_CLK: process
-  begin
-    s_CLK <= '0';
-    wait for gCLK_HPER;
-    s_CLK <= '1';
-    wait for gCLK_HPER/2;
-  end process;
+begin
+
+s_CLK <= '0';
+
+wait for gCLK_HPER;
+
+s_CLK <= '1';
+
+wait for gCLK_HPER/2;
+
+end process;
   
-  -- Test 
-  P_TB: process
-  begin
-    -- test add
-    s_opcode <= "000000";
-    s_funct  <= "100000";
-    expected_out <= "000111000110100";
-    wait for cCLK_PER/2;
+-- This is the main test process for the control unit
+P_TB: process
 
-    -- test addu
-    s_opcode <= "000000";
-    s_funct  <= "100001";
-    expected_out <= "000000000110100";
-    wait for cCLK_PER/2;
+begin
 
-    -- test and
-    s_opcode <= "000000";
-    s_funct  <= "100100";
-    expected_out <= "000001000110100";
-    wait for cCLK_PER/2;
+-- test add instruction
+s_opcode <= "000000";
+s_funct  <= "100000";
+expected_output <= "000111000110100";
 
-    -- test nor
-    s_opcode <= "000000";
-    s_funct  <= "100111";
-    expected_out <= "000010100110100";
-    wait for cCLK_PER/2;
+wait for cCLK_PER/2;
 
-    -- test xor
-    s_opcode <= "000000";
-    s_funct  <= "100110";
-    expected_out <= "000010000110100";
-    wait for cCLK_PER/2;
+-- test addu instruction
+s_opcode <= "000000";
+s_funct  <= "100001";
+expected_output <= "000000000110100";
 
-    -- test or
-    s_opcode <= "000000";
-    s_funct  <= "100101";
-    expected_out <= "000001100110100";
-    wait for cCLK_PER/2;
+wait for cCLK_PER/2;
 
-    -- test slt
-    s_opcode <= "000000";
-    s_funct  <= "101010";
-    expected_out <= "000011100110100";
-    wait for cCLK_PER/2;
+-- test and instruction
+s_opcode <= "000000";
+s_funct  <= "100100";
+expected_output <= "000001000110100";
 
-    -- test sll
-    s_opcode <= "000000";
-    s_funct  <= "000000";
-    expected_out <= "000100100110100";
-    wait for cCLK_PER/2;
+wait for cCLK_PER/2;
 
-    -- test srl
-    s_opcode <= "000000";
-    s_funct  <= "000010";
-    expected_out <= "000100000110000";
-    wait for cCLK_PER/2;
+-- test nor instruction
+s_opcode <= "000000";
+s_funct  <= "100111";
+expected_output <= "000010100110100";
 
-    -- test sra
-    s_opcode <= "000000";
-    s_funct  <= "000011";
-    expected_out <= "000101000110100";
-    wait for cCLK_PER/2;
+wait for cCLK_PER/2;
 
-    -- test sub
-    s_opcode <= "000000";
-    s_funct  <= "100010";
-    expected_out <= "000111100110100";
-    wait for cCLK_PER/2;
+-- test xor instruction
+s_opcode <= "000000";
+s_funct  <= "100110";
+expected_output <= "000010000110100";
 
-    -- test subu
-    s_opcode <= "000000";
-    s_funct  <= "100011";
-    expected_out <= "000000100110100";
-    wait for cCLK_PER/2;
+wait for cCLK_PER/2;
 
-    -- test addi
-    s_opcode <= "001000";
-    s_funct  <= "000000";
-    expected_out <= "001111000100100";
-    wait for cCLK_PER/2;
+-- test or instruction
+s_opcode <= "000000";
+s_funct  <= "100101";
+expected_output <= "000001100110100";
 
-    -- test addiu
-    s_opcode <= "001001";
-    expected_out <= "001000000100100";
-    wait for cCLK_PER/2;
+wait for cCLK_PER/2;
 
-    -- test andi
-    s_opcode <= "001100";
-    expected_out <= "001001000100000";
-    wait for cCLK_PER/2;
+-- test slt instruction
+s_opcode <= "000000";
+s_funct  <= "101010";
+expected_output <= "000011100110100";
 
-    -- test xori
-    s_opcode <= "001110";
-    expected_out <= "001010000100000";
-    wait for cCLK_PER/2;
+wait for cCLK_PER/2;
 
-    -- test ori
-    s_opcode <= "001101";
-    expected_out <= "001001100100000";
-    wait for cCLK_PER/2;
+-- test sll instruction
+s_opcode <= "000000";
+s_funct  <= "000000";
+expected_output <= "000100100110100";
 
-    -- test slti
-    s_opcode <= "001010";
-    expected_out <= "001011100100100";
-    wait for cCLK_PER/2;
+wait for cCLK_PER/2;
 
-    -- test lui
-    s_opcode <= "001111";
-    expected_out <= "001011000100100";
-    wait for cCLK_PER/2;
+-- test srl instruction
+s_opcode <= "000000";
+s_funct  <= "000010";
+expected_output <= "000100000110000";
 
-    -- test beq
-    s_opcode <= "000100";
-    expected_out <= "000101100001100";
-    wait for cCLK_PER/2;
+wait for cCLK_PER/2;
 
-    -- test bne
-    s_opcode <= "000101";
-    expected_out <= "000110000001100";
-    wait for cCLK_PER/2;
+-- test sra instruction
+s_opcode <= "000000";
+s_funct  <= "000011";
+expected_output <= "000101000110100";
 
-    -- test lw
-    s_opcode <= "100011";
-    expected_out <= "001000010100100";
-    wait for cCLK_PER/2;
+wait for cCLK_PER/2;
 
-    -- test sw
-    s_opcode <= "101011";
-    expected_out <= "001000001000100";
-    wait for cCLK_PER/2;
+-- test sub instruction
+s_opcode <= "000000";
+s_funct  <= "100010";
+expected_output <= "000111100110100";
 
-    -- test j
-    s_opcode <= "000010";
-    expected_out <= "000000000000110";
-    wait for cCLK_PER/2;
+wait for cCLK_PER/2;
 
-    -- test jal
-    s_opcode <= "000011";
-    expected_out <= "010000000100110";
-    wait for cCLK_PER/2;
+-- test subu instruction
+s_opcode <= "000000";
+s_funct  <= "100011";
+expected_output <= "000000100110100";
 
-    -- test jr
-    s_opcode <= "000000";
-    s_funct  <= "001000";
-    expected_out <= "100000000000110";
-    wait for cCLK_PER/2;
+wait for cCLK_PER/2;
 
-    -- test halt
-    s_opcode <= "010100";
-    s_funct  <= "000000";
-    expected_out <= "000000000000001";
-    wait for cCLK_PER/2;
+-- test addi instruction
+s_opcode <= "001000";
+s_funct  <= "000000";
+expected_output <= "001111000100100";
 
-    wait;
-  end process;
+wait for cCLK_PER/2;
+
+-- test addiu instruction
+s_opcode <= "001001";
+expected_output <= "001000000100100";
+
+wait for cCLK_PER/2;
+
+-- test andi instruction
+s_opcode <= "001100";
+expected_output <= "001001000100000";
+
+wait for cCLK_PER/2;
+
+-- test xori instruction
+s_opcode <= "001110";
+expected_output <= "001010000100000";
+
+wait for cCLK_PER/2;
+
+-- test ori instruction
+s_opcode <= "001101";
+expected_output <= "001001100100000";
+
+wait for cCLK_PER/2;
+
+-- test slti instruction
+s_opcode <= "001010";
+expected_output <= "001011100100100";
+
+wait for cCLK_PER/2;
+
+-- test lui instruction
+s_opcode <= "001111";
+expected_output <= "001011000100100";
+
+wait for cCLK_PER/2;
+
+-- test beq instruction
+s_opcode <= "000100";
+expected_output <= "000101100001100";
+
+wait for cCLK_PER/2;
+
+-- test bne instruction
+s_opcode <= "000101";
+expected_output <= "000110000001100";
+
+wait for cCLK_PER/2;
+
+-- test lw instruction
+s_opcode <= "100011";
+expected_output <= "001000010100100";
+
+    wait for cCLK_PER/2;
+-- test sw instruction
+s_opcode <= "101011";
+expected_output <= "001000001000100";
+wait for cCLK_PER/2;
+
+-- test j instruction
+s_opcode <= "000010";
+expected_output <= "000000000000110";
+
+wait for cCLK_PER/2;
+
+-- test jal instruction
+s_opcode <= "000011";
+expected_output <= "010000000100110";
+
+wait for cCLK_PER/2;
+
+-- test jr instruction
+s_opcode <= "000000";
+s_funct  <= "001000";
+expected_output <= "100000000000110";
+
+wait for cCLK_PER/2;
+
+-- test halt instruction
+s_opcode <= "010100";
+s_funct  <= "000000";
+expected_output <= "000000000000001";
+
+wait for cCLK_PER/2;
+
+wait;
+
+end process;
   
 end behavior;
