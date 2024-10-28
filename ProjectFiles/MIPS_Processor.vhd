@@ -116,7 +116,7 @@ end component;
 component control_unit is
 port(i_opcode : in std_logic_vector(5 downto 0);
      i_funct : in std_logic_vector(5 downto 0);
-     o_Ctrl_Unt : out std_logic_vector(14 downto 0));
+     o_ctrl_unit : out std_logic_vector(14 downto 0));
 end component;
 
 component ALU_Control is
@@ -216,7 +216,7 @@ begin
  controlunit : control_unit
  port map(i_opcode   => s_Inst(31 downto 26), -- first 5 bits of instruciton for opcode
          i_funct     => s_Inst(5 downto 0),   -- last  bits of instruction for func code
-         o_Ctrl_Unt  => s_ControlUnitOutput);
+         o_ctrl_unit  => s_ControlUnitOutput);
 
 -- Control Unit Output Guide from drawing
 -- 14 jr
