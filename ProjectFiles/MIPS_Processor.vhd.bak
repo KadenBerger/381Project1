@@ -234,7 +234,7 @@ begin
 
 	regdstmux : mux2t1_N
 	generic map(N => 5)
-	port map(i_S  => s_ControlUnitOutput(4),
+	port map(i_S  => s_ControlUnitOutput(4),			-- TODO
       		 i_D0 => s_Inst(20 downto 16),
       		 i_D1 => s_Inst(15 downto 11),
       		 o_O  => regDSTMuxOutput);
