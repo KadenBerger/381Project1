@@ -9,10 +9,13 @@ arr:
         .word	1 
 .text
 main:
+
   li $sp, 0x10011000 	#Int stack pointer
   sub	$sp, $sp, 32 	#make space on stack 
   addi	$a0, $sp, 8 	#a0 is the array stack
   addi	$a1, $zero, 20  #array size in bytes
+
+#Store each element in Array
   sw	$a1, 4($sp) 	#stores array
   addi	$t1, $zero, 5	#t1 loads 5
   sw	$t1, 0($a0)	#a0(0) stores 5
@@ -50,6 +53,7 @@ swapped:
   beq	$t7, 1, bubble		#swap repeat bubble sort
 
 whiledone:
+#Load all elements
   lw	$t0, 0($a0) 		#load a(0)
   lw	$t1, 4($a0)		#load a(1)
   lw	$t2, 8($a0)		#load a(2)
